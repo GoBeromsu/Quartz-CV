@@ -225,10 +225,6 @@ DNS 레코드 입력이 불가능하다는 메시지를 해결 하기 위해, [G
 
 ![[Quartz Blog 만들기-20240918232302592.jpg]]
 
-
-## Thinking
-- [[2024-09-18]] 22:51 Cloudflare가 뭐지? 여기에 바로 배포도 할 수 있나봄
-
 ## Reference
 
 - [[What is apex domain]]
