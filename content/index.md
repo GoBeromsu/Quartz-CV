@@ -204,7 +204,7 @@ Obsidian Quartz를 Squarespace에 게시하려면 다음 단계를 따르면 됩
 DNS 레코드 입력이 불가능하다는 메시지를 해결 하기 위해, [GitHub Pages에서 호스팅된 웹사이트에 Squarespace 도메인 연결하기](https://github.com/orgs/community/discussions/78573)에 관한 GitHub 커뮤니티 토론을 참조하였습니다.
 
 1. **A 레코드 설정**:
-   - Squarespace의 DNS 관리 인터페이스에서 `@` 심볼을 사용하여 루트 도메인�� 나타냅니다.
+   - Squarespace의 DNS 관리 인터페이스에서 `@` 심볼을 사용하여 루트 도메인을 나타냅니다.
    - GitHub Pages의 IP 주소 4개를 개별 A 레코드로 추가하였습니다:
 	  - 185.199.108.153
 	  - 185.199.109.153
