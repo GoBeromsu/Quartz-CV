@@ -16,7 +16,17 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "berom.net",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: [
+      ".git",
+      ".gitignore",
+      ".obsidian",
+      "private",
+      "**/*.pdf",
+      ".obsidian.vimrc",
+      ".smart-env",
+      "50. Calendar",
+      "70. Settings",
+    ],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
@@ -72,7 +82,7 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
-    filters: [Plugin.RemoveDrafts()],
+    filters: [Plugin.RemoveDrafts(), Plugin.ExplicitPublish()],
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
