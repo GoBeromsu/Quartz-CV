@@ -1,20 +1,40 @@
 .image-description-layout {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: flex-start;
   max-width: 100%;
   margin: 0 auto;
 
-  .image-container {
+  .left-column {
     flex: 0 0 auto;
-    width: 25%;
-    max-width: 250px;
-    img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      border-radius: 8px;
+    width: 25%; // 20%에서 22%로 약간 늘림
+    max-width: 250px; // 200px에서 220px로 늘림
+
+    .image-container {
+      margin-bottom: -5%;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        aspect-ratio: 1 / 1; // 이미지를 정사각형으로 유지
+      }
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      a {
+        font-size: 1.2rem;
+        color: var(--text);
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--secondary);
+        }
+      }
     }
   }
 
@@ -28,8 +48,17 @@
   .image-description-layout {
     flex-direction: column;
 
-    .image-container {
-      display: none;
+    .left-column {
+      width: 100%;
+      max-width: none;
+
+      .image-container {
+        display: none;
+      }
+
+      .social-links {
+        margin-bottom: 0.5rem; // 1rem에서 0.5rem로 줄임
+      }
     }
 
     .description-container {
