@@ -8,16 +8,26 @@ interface SocialLink {
   twitter?: string
 }
 
+interface Frontmatter {
+  image?: string
+  description?: string
+  github?: string
+  email?: string
+  linkedin?: string
+  twitter?: string
+}
+
 export function ImageDescriptionLayout({ fileData, children }: QuartzComponentProps) {
   if (!fileData) return null
 
-  const imageSrc: string = fileData.frontmatter?.image as string || "/path/to/default/image.jpg"
-  const description = fileData.frontmatter?.description || "No description available"
+  const frontmatter = fileData.frontmatter as Frontmatter
+  const imageSrc: string = frontmatter.image || "/path/to/default/image.jpg"
+  const description = frontmatter.description || "No description available"
   const socialLinks: SocialLink = {
-    github: fileData.frontmatter?.github,
-    email: fileData.frontmatter?.email,
-    linkedin: fileData.frontmatter?.linkedin,
-    twitter: fileData.frontmatter?.twitter,
+    github: frontmatter.github,
+    email: frontmatter.email,
+    linkedin: frontmatter.linkedin,
+    twitter: frontmatter.twitter,
   }
 
   return (

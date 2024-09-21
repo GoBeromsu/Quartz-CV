@@ -8,17 +8,18 @@
 
   .left-column {
     flex: 0 0 auto;
-    width: 25%; // 20%에서 22%로 약간 늘림
-    max-width: 250px; // 200px에서 220px로 늘림
+    width: 25%;
+    max-width: 250px;
 
     .image-container {
-      margin-bottom: -5%;
+      margin-bottom: 1rem;
       img {
         width: 100%;
         height: auto;
         object-fit: cover;
         border-radius: 8px;
-        aspect-ratio: 1 / 1; // 이미지를 정사각형으로 유지
+        aspect-ratio: 1 / 1;
+        max-height: 250px; // Add this line to limit image height
       }
     }
 
@@ -53,11 +54,13 @@
       max-width: none;
 
       .image-container {
-        display: none;
+        display: block; // Change this from 'none' to 'block'
+        max-width: 250px; // Add this line to limit image width on mobile
+        margin: 0 auto 1rem; // Center the image container
       }
 
       .social-links {
-        margin-bottom: 0.5rem; // 1rem에서 0.5rem로 줄임
+        margin-bottom: 1rem;
       }
     }
 
