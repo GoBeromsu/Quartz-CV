@@ -1,0 +1,39 @@
+.image-description-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  max-width: 100%;
+  margin: 0 auto;
+
+  .image-container {
+    flex: 0 0 auto;
+    width: 25%;
+    max-width: 250px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+
+  .description-container {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-description-layout {
+    flex-direction: column;
+
+    .image-container {
+      display: none;
+    }
+
+    .description-container {
+      width: 100%;
+    }
+  }
+}
