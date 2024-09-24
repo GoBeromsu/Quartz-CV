@@ -1,5 +1,5 @@
 ---
-tags:
+tags: 
 aliases:
   - 📚 043 Digital Garden
   - Digital Garden
@@ -12,9 +12,14 @@ linkedin: https://www.linkedin.com/in/beomsu-koh-b45146266/
 twitter: https://x.com/BeromArtDev
 title: Home
 CV: true
+up:
+  - "[[CV 프로젝트]]"
 ---
 
 CV/포토폴리오 겸으로 사용할 장소입니다, Top-down 형식으로 전개해 나갈 예정입니다
+
+
+- [[아버지를 존경할 이유]]
 
 ## Reference
 
