@@ -1,8 +1,20 @@
 ---
 Habitus: 
 up: 
-tags: [논문관리, 참고문헌관리, 인용관리, 학술연구, 연구도구, ReferenceManagement, CitationManagement, AcademicResearch, BibliographyManagement, ResearchTools, terminology]
-aliases: [Zotero, Citation Tool]
+tags:
+  - 논문관리
+  - 참고문헌관리
+  - 인용관리
+  - 학술연구
+  - 연구도구
+  - CitationManagement
+  - AcademicResearch
+  - BibliographyManagement
+  - ResearchTools
+  - terminology
+aliases:
+  - Zotero
+  - Citation Tool
 CMDS:
   - "[[📚 013 Terminologies]]"
 author:

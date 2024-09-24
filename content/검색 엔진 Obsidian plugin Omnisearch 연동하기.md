@@ -37,10 +37,10 @@ Omnisearch를 브라우저와 연동하면 다음과 같은 이점을 얻을 수
 ## Omnisearch를 Google/Kagi에 연결하는 방법
 
 1. [Omnisearch](https://obsidian.md/plugins?search=Omnisearch)의 최신 버전을 Obsidian에 설치하고, 설정에서 HTTP 서버를 활성화합니다.
-   ![[60. Resources/_attachments/private/검색 엔진 Obsidian plugin Omnisearch 연동하기-20240914104958688.jpg]]
+   ![[검색 엔진 Obsidian plugin Omnisearch 연동하기-20240914104958688.jpg]]
 
 2. 브라우저에 [Tampermonkey](https://www.tampermonkey.net/) (또는 다른 userscript 관리자)를 설치합니다.
-   ![[60. Resources/_attachments/private/검색 엔진 Obsidian plugin Omnisearch 연동하기-20240914105040210.jpg]]
+   ![[검색 엔진 Obsidian plugin Omnisearch 연동하기-20240914105040210.jpg]]
 
 1. 브라우저의 Developer Mode를 활성화합니다. 브라우저별 확장 프로그램 페이지 링크:
    - Chrome: [chrome://extensions/](chrome://extensions/)
@@ -57,7 +57,7 @@ Omnisearch를 브라우저와 연동하면 다음과 같은 이점을 얻을 수
 - [Bing](https://github.com/scambier/userscripts/raw/master/dist/obsidian-omnisearch-bing.user.js)
 
 
-![[60. Resources/_attachments/private/검색 엔진 Obsidian plugin Omnisearch 연동하기-20240914110149235.jpg]]
+![[검색 엔진 Obsidian plugin Omnisearch 연동하기-20240914110149235.jpg]]
 
 다음은 experimental Javascript feature를 실행시켜야 합니다
 
@@ -66,11 +66,11 @@ Omnisearch를 브라우저와 연동하면 다음과 같은 이점을 얻을 수
    - Arc: [arc://flags/#enable-experimental-web-platform-features](arc://flags)
 
    각 브라우저에서 "Experimental Web Platform features"를 찾아 "Enabled"로 설정합니다.
-![[60. Resources/_attachments/private/검색 엔진 Obsidian plugin Omnisearch 연동하기-20240914110433209.jpg]]
-![[60. Resources/_attachments/private/검색 엔진 Obsidian plugin Omnisearch 연동하기-20240914110620403.jpg]]
+![[검색 엔진 Obsidian plugin Omnisearch 연동하기-20240914110433209.jpg]]
+![[검색 엔진 Obsidian plugin Omnisearch 연동하기-20240914110620403.jpg]]
 
 이제 처음 구글 search를 하면, 아래와 같이 권한을 요구합니다. 여기서 Allow를 누르시면 사용하실 수 있습니다
-![[60. Resources/_attachments/private/검색 엔진 Obsidian plugin Omnisearch 연동하기-20240914110223756.jpg]]
+![[검색 엔진 Obsidian plugin Omnisearch 연동하기-20240914110223756.jpg]]
 
 ## 궁금증
 ### 왜 Developer Mode를 활성화해야 하나요?

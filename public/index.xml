@@ -6,23 +6,53 @@
       <description>Last 10 notes on Beomsu Koh</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>아버지를 존경할 이유</title>
-    <link>https://berom.net/%EC%95%84%EB%B2%84%EC%A7%80%EB%A5%BC-%EC%A1%B4%EA%B2%BD%ED%95%A0-%EC%9D%B4%EC%9C%A0</link>
-    <guid>https://berom.net/%EC%95%84%EB%B2%84%EC%A7%80%EB%A5%BC-%EC%A1%B4%EA%B2%BD%ED%95%A0-%EC%9D%B4%EC%9C%A0</guid>
-    <description>아빠한테 전화해서 존경한다고 말씀드렸다 아버지라 부르지는 않지만, 호칭에 상관 없이 암튼 존경한다 왜냐면, 아버지이기 때문이다, 그 무거운 이름을 짊어진 것이 정말 멋진 것임을 점점 느낀다 최근에 책을 통해 사기를 당하면, 비가역적인 손상을 입을 수 있고, 그 처벌 또한 시원하게 할 수 없는 경우가 잦다는 것을 알게 되었다 왜냐면, 우리의 도덕과 법이 완전히 ...</description>
-    <pubDate>Tue, 24 Sep 2024 16:03:52 GMT</pubDate>
-  </item><item>
-    <title>조테로 (Zotero)</title>
-    <link>https://berom.net/%EC%A1%B0%ED%85%8C%EB%A1%9C-(Zotero)</link>
-    <guid>https://berom.net/%EC%A1%B0%ED%85%8C%EB%A1%9C-(Zotero)</guid>
-    <description>조테로 (Zotero) What is Zotero 정의 (Definition): 조테로는 연구자들이 소스를 관리하고 조직할 수 있게 도와주는 무료, 오픈 소스 참고문헌 관리 도구입니다. 사용자가 연구 자료를 수집, 정리, 인용, 공유할 수 있게 지원합니다(Center for History and New Media, 2022).</description>
-    <pubDate>Tue, 24 Sep 2024 16:02:50 GMT</pubDate>
+    <title>음향 엔지니어가 Javascript Concurrency Vs Parallelism 이해하는 방법</title>
+    <link>https://berom.net/%EC%9D%8C%ED%96%A5-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EA%B0%80-Javascript-Concurrency-Vs-Parallelism-%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95</link>
+    <guid>https://berom.net/%EC%9D%8C%ED%96%A5-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EA%B0%80-Javascript-Concurrency-Vs-Parallelism-%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95</guid>
+    <description>동시성 (Concurrency) 동시성은 여러 작업이 논리적으로 동시에 진행되는 것을 의미합니다. JavaScript에서는 단일 스레드로 동작하지만, 이벤트 루프를 통해 동시성을 구현합니다. 비유: 믹싱 콘솔에서의 여러 트랙 관리 라이브 공연 중 사운드 엔지니어는 믹싱 콘솔을 통해 여러 악기와 보컬의 소리를 조절합니다.</description>
+    <pubDate>Tue, 24 Sep 2024 22:04:34 GMT</pubDate>
   </item><item>
     <title>Home</title>
     <link>https://berom.net/</link>
     <guid>https://berom.net/</guid>
     <description>This is the home page of my digital garden.</description>
-    <pubDate>Tue, 24 Sep 2024 16:02:08 GMT</pubDate>
+    <pubDate>Tue, 24 Sep 2024 22:03:15 GMT</pubDate>
+  </item><item>
+    <title>Concurrency Vs Parallelism</title>
+    <link>https://berom.net/Concurrency-Vs-Parallelism</link>
+    <guid>https://berom.net/Concurrency-Vs-Parallelism</guid>
+    <description>동시성 (Concurrency) 동시성은 JavaScript에서 비동기 프로그래밍을≤ 통해 구현됩니다. 단일 스레드 언어인 JavaScript는 이벤트 루프를 사용하여 여러 작업을 효율적으로 처리할 수 있습니다. 이벤트 루프 이벤트 루프(Event Loop) 는 프로그램 주위를 도는 큰 루프로 생각할 수 있습니다.</description>
+    <pubDate>Tue, 24 Sep 2024 22:01:59 GMT</pubDate>
+  </item><item>
+    <title>Javascript Asynchronous Programming</title>
+    <link>https://berom.net/Javascript-Asynchronous-Programming</link>
+    <guid>https://berom.net/Javascript-Asynchronous-Programming</guid>
+    <description>Asynchronous programming in JavaScript is a technique that allows the program to start potentially time-consuming tasks and continue executing other tasks without waiting for ...</description>
+    <pubDate>Tue, 24 Sep 2024 21:54:34 GMT</pubDate>
+  </item><item>
+    <title>음향 엔지니어가 JavaScript의 실행 메커니즘 이해하는 방법</title>
+    <link>https://berom.net/%EC%9D%8C%ED%96%A5-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EA%B0%80-JavaScript%EC%9D%98-%EC%8B%A4%ED%96%89-%EB%A9%94%EC%BB%A4%EB%8B%88%EC%A6%98-%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95</link>
+    <guid>https://berom.net/%EC%9D%8C%ED%96%A5-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EA%B0%80-JavaScript%EC%9D%98-%EC%8B%A4%ED%96%89-%EB%A9%94%EC%BB%A4%EB%8B%88%EC%A6%98-%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95</guid>
+    <description>JavaScript의 실행 메커니즘 이해하기 - 사운드 엔지니어를 위한 안내서 JavaScript는 싱글 스레드 언어로, 동기와 비동기 코드를 효율적으로 처리하기 위해 콜 스택, 이벤트 루프, 그리고 태스크 큐를 사용합니다. 이 글에서는 사운드 엔지니어의 작업 흐름을 비유로 들어 JavaScript의 실행 메커니즘을 쉽게 이해할 수 있도록 설명하겠습니다.</description>
+    <pubDate>Tue, 24 Sep 2024 21:45:53 GMT</pubDate>
+  </item><item>
+    <title>검색 엔진 Obsidian plugin Omnisearch 연동하기</title>
+    <link>https://berom.net/%EA%B2%80%EC%83%89-%EC%97%94%EC%A7%84-Obsidian-plugin-Omnisearch-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0</link>
+    <guid>https://berom.net/%EA%B2%80%EC%83%89-%EC%97%94%EC%A7%84-Obsidian-plugin-Omnisearch-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0</guid>
+    <description>검색엔진 Obsidian Plugin Omnisearch 연동하기 Omnisearch는 Obsidian의 강력한 검색 플러그인으로, 다음과 같은 특징을 가지고 있습니다: 다양한 파일 형식 지원: 노트, Office 문서, PDF, 이미지 등을 빠르게 검색 오타 저항성: 검색어의 오타에도 관련 결과를 찾아냄 필터링 기능: 다양한 파일 형식별 ...</description>
+    <pubDate>Tue, 24 Sep 2024 16:31:10 GMT</pubDate>
+  </item><item>
+    <title>조테로 (Zotero)</title>
+    <link>https://berom.net/%EC%A1%B0%ED%85%8C%EB%A1%9C-(Zotero)</link>
+    <guid>https://berom.net/%EC%A1%B0%ED%85%8C%EB%A1%9C-(Zotero)</guid>
+    <description>조테로 (Zotero) What is Zotero 정의 (Definition): 조테로는 연구자들이 소스를 관리하고 조직할 수 있게 도와주는 무료, 오픈 소스 참고문헌 관리 도구입니다. 사용자가 연구 자료를 수집, 정리, 인용, 공유할 수 있게 지원합니다(Center for History and New Media, 2022).</description>
+    <pubDate>Tue, 24 Sep 2024 16:07:16 GMT</pubDate>
+  </item><item>
+    <title>아버지를 존경할 이유</title>
+    <link>https://berom.net/%EC%95%84%EB%B2%84%EC%A7%80%EB%A5%BC-%EC%A1%B4%EA%B2%BD%ED%95%A0-%EC%9D%B4%EC%9C%A0</link>
+    <guid>https://berom.net/%EC%95%84%EB%B2%84%EC%A7%80%EB%A5%BC-%EC%A1%B4%EA%B2%BD%ED%95%A0-%EC%9D%B4%EC%9C%A0</guid>
+    <description>아빠한테 전화해서 존경한다고 말씀드렸다 아버지라 부르지는 않지만, 호칭에 상관 없이 암튼 존경한다 왜냐면, 아버지이기 때문이다, 그 무거운 이름을 짊어진 것이 정말 멋진 것임을 점점 느낀다 최근에 책을 통해 사기를 당하면, 비가역적인 손상을 입을 수 있고, 그 처벌 또한 시원하게 할 수 없는 경우가 잦다는 것을 알게 되었다 왜냐면, 우리의 도덕과 법이 완전히 ...</description>
+    <pubDate>Tue, 24 Sep 2024 16:03:52 GMT</pubDate>
   </item><item>
     <title>크램폴린 IDE - NGINX 문제 해결</title>
     <link>https://berom.net/%ED%81%AC%EB%9E%A8%ED%8F%B4%EB%A6%B0-IDE---NGINX-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0</link>
@@ -35,30 +65,6 @@
     <guid>https://berom.net/Zotero-7-hookmark-%EB%8F%99%EC%9E%91-%EC%95%88%ED%95%98%EB%8A%94-%EA%B2%83-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95</guid>
     <description>I’m currently using Zotero for my research, Zotero is free and easy to use. This week, I upgraded to Zotero 7 beta because it has a better design than the previous version.</description>
     <pubDate>Tue, 24 Sep 2024 15:50:54 GMT</pubDate>
-  </item><item>
-    <title>검색 엔진 Obsidian plugin Omnisearch 연동하기</title>
-    <link>https://berom.net/%EA%B2%80%EC%83%89-%EC%97%94%EC%A7%84-Obsidian-plugin-Omnisearch-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0</link>
-    <guid>https://berom.net/%EA%B2%80%EC%83%89-%EC%97%94%EC%A7%84-Obsidian-plugin-Omnisearch-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0</guid>
-    <description>검색엔진 Obsidian Plugin Omnisearch 연동하기 Omnisearch는 Obsidian의 강력한 검색 플러그인으로, 다음과 같은 특징을 가지고 있습니다: 다양한 파일 형식 지원: 노트, Office 문서, PDF, 이미지 등을 빠르게 검색 오타 저항성: 검색어의 오타에도 관련 결과를 찾아냄 필터링 기능: 다양한 파일 형식별 ...</description>
-    <pubDate>Tue, 24 Sep 2024 15:48:30 GMT</pubDate>
-  </item><item>
-    <title>Solution for Nginx SSL Certificate Passphrase Issue</title>
-    <link>https://berom.net/Solution-for-Nginx-SSL-Certificate-Passphrase-Issue</link>
-    <guid>https://berom.net/Solution-for-Nginx-SSL-Certificate-Passphrase-Issue</guid>
-    <description>Solution for Nginx SSL Certificate Passphrase Issue Ensuring the seamless operation of your Nginx server, especially in automated environments like Docker, is crucial ...</description>
-    <pubDate>Wed, 11 Sep 2024 20:38:28 GMT</pubDate>
-  </item><item>
-    <title>Terminology generating workflow with Obsidian and Generative AI</title>
-    <link>https://berom.net/Terminology-generating-workflow-with-Obsidian-and-Generative-AI</link>
-    <guid>https://berom.net/Terminology-generating-workflow-with-Obsidian-and-Generative-AI</guid>
-    <description>General Terminology Perplexity + Obsidian Plugin - Templater when we learn new fields, we need to know the terminology. There is way to make terminology easier with obsidian avoiding halluciations First, find terminology by using an AI search tool like Perplexity.</description>
-    <pubDate>Wed, 11 Sep 2024 11:29:36 GMT</pubDate>
-  </item><item>
-    <title>Error Handling in GitHub Workflow Extensions</title>
-    <link>https://berom.net/Error-Handling-in-GitHub-Workflow-Extensions</link>
-    <guid>https://berom.net/Error-Handling-in-GitHub-Workflow-Extensions</guid>
-    <description>I recently created my first community plugin for Obsidian, which has basic functions for practicing pronunciation. After submitting it, I received feedback from a reviewer suggesting I change the plugin’s name because its features are more focused on the pronunciation of selected text.</description>
-    <pubDate>Wed, 11 Sep 2024 11:29:35 GMT</pubDate>
   </item>
     </channel>
   </rss>

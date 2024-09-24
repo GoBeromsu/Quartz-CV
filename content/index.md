@@ -16,12 +16,19 @@ up:
   - "[[CV 프로젝트]]"
 ---
 
-CV/포토폴리오 겸으로 사용할 장소입니다, Top-down 형식으로 전개해 나갈 예정입니다
+- Sample 
+	- [[아버지를 존경할 이유]]
+	- [[Javascript Asynchronous Programming]]
+		- [[음향 엔지니어가 Javascript Concurrency Vs Parallelism 이해하는 방법]]
+		- [[음향 엔지니어가 JavaScript의 실행 메커니즘 이해하는 방법]]
 
 
-- [[아버지를 존경할 이유]]
 
-## Reference
+
+- To do list 
+	- google analytics 에 추가
+
+### Reference
 
 - [Minwoo Seong | phd hci @ GIST](https://minwooseong.com/)
 - [Welcome to Quartz 4](https://quartz.jzhao.xyz/)
