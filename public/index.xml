@@ -6,6 +6,18 @@
       <description>Last 10 notes on Beomsu Koh</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>2시간마다 한글 키보드를 자동으로 삭제하기</title>
+    <link>https://berom.net/2%EC%8B%9C%EA%B0%84%EB%A7%88%EB%8B%A4-%ED%95%9C%EA%B8%80-%ED%82%A4%EB%B3%B4%EB%93%9C%EB%A5%BC-%EC%9E%90%EB%8F%99%EC%9C%BC%EB%A1%9C-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0</link>
+    <guid>https://berom.net/2%EC%8B%9C%EA%B0%84%EB%A7%88%EB%8B%A4-%ED%95%9C%EA%B8%80-%ED%82%A4%EB%B3%B4%EB%93%9C%EB%A5%BC-%EC%9E%90%EB%8F%99%EC%9C%BC%EB%A1%9C-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0</guid>
+    <description>2시간마다 한글 키보드를 자동으로 삭제하기 저는 영어 실력 향상을 목표로, 의도적으로 한글 사용 빈도를 줄이는 환경을 만들고자 했습니다. 한글을 계속 사용하다 보면 무의식적으로 한글을 더 자주 쓰게 되는데, 이를 방지하기 위해 2시간에 한 번씩 한글 키보드 레이아웃을 자동으로 제거하도록 설정했습니다.</description>
+    <pubDate>Wed, 25 Sep 2024 22:06:37 GMT</pubDate>
+  </item><item>
+    <title>의존성 주입 (Dependency Injection)</title>
+    <link>https://berom.net/%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A3%BC%EC%9E%85-(Dependency-Injection)</link>
+    <guid>https://berom.net/%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A3%BC%EC%9E%85-(Dependency-Injection)</guid>
+    <description>의존성 주입(Dependency Injection, DI) 은 객체 지향 프로그래밍에서 객체가 자신이 필요로 하는 의존성을 직접 생성하지 않고, 외부에서 제공(주입)받는 설계 패턴이자 원칙입니다(Fowler, 2004). 여기서 의존성이란 한 객체가 다른 객체의 기능이나 데이터를 필요로 할 때 그 객체를 의미합니다.</description>
+    <pubDate>Wed, 25 Sep 2024 17:15:11 GMT</pubDate>
+  </item><item>
     <title>음향 엔지니어가 Javascript Concurrency Vs Parallelism 이해하는 방법</title>
     <link>https://berom.net/%EC%9D%8C%ED%96%A5-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EA%B0%80-Javascript-Concurrency-Vs-Parallelism-%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95</link>
     <guid>https://berom.net/%EC%9D%8C%ED%96%A5-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EA%B0%80-Javascript-Concurrency-Vs-Parallelism-%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95</guid>
@@ -53,18 +65,6 @@
     <guid>https://berom.net/%EC%95%84%EB%B2%84%EC%A7%80%EB%A5%BC-%EC%A1%B4%EA%B2%BD%ED%95%A0-%EC%9D%B4%EC%9C%A0</guid>
     <description>아빠한테 전화해서 존경한다고 말씀드렸다 아버지라 부르지는 않지만, 호칭에 상관 없이 암튼 존경한다 왜냐면, 아버지이기 때문이다, 그 무거운 이름을 짊어진 것이 정말 멋진 것임을 점점 느낀다 최근에 책을 통해 사기를 당하면, 비가역적인 손상을 입을 수 있고, 그 처벌 또한 시원하게 할 수 없는 경우가 잦다는 것을 알게 되었다 왜냐면, 우리의 도덕과 법이 완전히 ...</description>
     <pubDate>Tue, 24 Sep 2024 16:03:52 GMT</pubDate>
-  </item><item>
-    <title>크램폴린 IDE - NGINX 문제 해결</title>
-    <link>https://berom.net/%ED%81%AC%EB%9E%A8%ED%8F%B4%EB%A6%B0-IDE---NGINX-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0</link>
-    <guid>https://berom.net/%ED%81%AC%EB%9E%A8%ED%8F%B4%EB%A6%B0-IDE---NGINX-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0</guid>
-    <description>persona :: 🔥 Programmer index :: 🏷️ Develop Notes #개발 크램폴린 IDE - Nginx 문제 해결 2023년은 카카오 테크 캠퍼스에서 교육을 받았습니다 오늘은 카카오의 클라우드 기반 학습 관리 시스템인 크램폴린 환경에 배포하며 겪은 문제를 나누려고 합니다 Intro ...</description>
-    <pubDate>Tue, 24 Sep 2024 15:55:36 GMT</pubDate>
-  </item><item>
-    <title>Zotero 7 hookmark 동작 안하는 것 해결 방법</title>
-    <link>https://berom.net/Zotero-7-hookmark-%EB%8F%99%EC%9E%91-%EC%95%88%ED%95%98%EB%8A%94-%EA%B2%83-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95</link>
-    <guid>https://berom.net/Zotero-7-hookmark-%EB%8F%99%EC%9E%91-%EC%95%88%ED%95%98%EB%8A%94-%EA%B2%83-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95</guid>
-    <description>I’m currently using Zotero for my research, Zotero is free and easy to use. This week, I upgraded to Zotero 7 beta because it has a better design than the previous version.</description>
-    <pubDate>Tue, 24 Sep 2024 15:50:54 GMT</pubDate>
   </item>
     </channel>
   </rss>
