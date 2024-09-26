@@ -15,12 +15,6 @@ interface MacroType {
 export const Latex: QuartzTransformerPlugin<Partial<Options>> = (opts) => {
   const engine = opts?.renderEngine ?? "katex"
   const macros = opts?.customMacros ?? {}
-  const katexOptions = {
-    strict: false,
-    trust: true,
-    throwOnError: false,
-    ignoredErrors: ["unicodeTextInMathMode"],
-  }
   return {
     name: "Latex",
     markdownPlugins() {
@@ -28,7 +22,7 @@ export const Latex: QuartzTransformerPlugin<Partial<Options>> = (opts) => {
     },
     htmlPlugins() {
       if (engine === "katex") {
-        return [[rehypeKatex, { output: "html", macros, ...katexOptions }]]
+        return [[rehypeKatex, { output: "html", macros }]]
       } else {
         return [[rehypeMathjax, { macros }]]
       }
