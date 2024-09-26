@@ -6,11 +6,17 @@
       <description>Last 10 notes on Beomsu Koh</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>게인 스트럭처(Gain Structure)</title>
+    <link>https://berom.net/Sound/%EA%B2%8C%EC%9D%B8-%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98(Gain-Structure)</link>
+    <guid>https://berom.net/Sound/%EA%B2%8C%EC%9D%B8-%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98(Gain-Structure)</guid>
+    <description>Gain Structure란 무엇인가? Gain Structure는 오디오 신호의 각 단계에서 신호의 레벨을 최적화하여 왜곡 없이 깨끗한 사운드를 유지하는 데 필수적인 요소입니다. 각 장비와 시스템 내에서 신호의 레벨을 조정하여 신호 대 잡음비(SNR)를 최대화하고 왜곡 없이 신호의 청정도를 유지하는 것을 목표로 합니다.</description>
+    <pubDate>Thu, 26 Sep 2024 20:45:13 GMT</pubDate>
+  </item><item>
     <title>신호 흐름 (Signal Flow)</title>
     <link>https://berom.net/Sound/%EC%8B%A0%ED%98%B8-%ED%9D%90%EB%A6%84-(Signal-Flow)</link>
     <guid>https://berom.net/Sound/%EC%8B%A0%ED%98%B8-%ED%9D%90%EB%A6%84-(Signal-Flow)</guid>
     <description>왜 시그널 플로우를 알아야 할까? 시그널 플로우(Signal Flow)는 음향 시스템에서 오디오 신호가 어떻게 이동하고 처리되는지를 나타내는 핵심 개념입니다. 시니어 사운드 엔지니어로서 시그널 플로우를 정확히 이해하지 못하면 시스템 설정, 문제 해결, 믹싱 등에서 심각한 어려움을 겪을 수 있습니다.</description>
-    <pubDate>Thu, 26 Sep 2024 14:59:33 GMT</pubDate>
+    <pubDate>Thu, 26 Sep 2024 18:08:40 GMT</pubDate>
   </item><item>
     <title>음향 (Sound)</title>
     <link>https://berom.net/Sound/%EC%9D%8C%ED%96%A5-(Sound)</link>
@@ -41,12 +47,6 @@
     <guid>https://berom.net/Sound/%ED%95%98%EC%9D%B4%ED%8C%A8%EC%8A%A4-%ED%95%84%ED%84%B0(High-Pass-Filter)</guid>
     <description>하이패스 필터 (High-Pass Filter) What is High-Pass Filter 정의 (Definition): 하이패스 필터(HPF)는 설정된 차단 주파수(cutoff frequency) 아래의 모든 주파수를 감쇠시키는 이퀄라이제이션 도구입니다. 즉, 고주파는 통과시키고 저주파는 제거합니다(Mathias, n.d.).</description>
     <pubDate>Thu, 26 Sep 2024 14:47:55 GMT</pubDate>
-  </item><item>
-    <title>게인 스트럭처(Gain Structure)</title>
-    <link>https://berom.net/Sound/%EA%B2%8C%EC%9D%B8-%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98(Gain-Structure)</link>
-    <guid>https://berom.net/Sound/%EA%B2%8C%EC%9D%B8-%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98(Gain-Structure)</guid>
-    <description>게인 구조 (Gain Structure)는 무엇인가? 게인 구조 (Gain Structure)는 사운드 엔지니어링에서 오디오 신호 경로 전반에 걸쳐 게인을 조정하여 최적의 신호 대 잡음비(SNR)와 왜곡 없는 사운드를 얻기 위한 전체적인 게인 관계를 의미합니다. 이는 각 단계에서 게인을 적절히 설정하여 오디오 시스템의 품질을 향상시키는 핵심 요소입니다.</description>
-    <pubDate>Thu, 26 Sep 2024 14:47:40 GMT</pubDate>
   </item><item>
     <title>검색 엔진 Obsidian plugin Omnisearch 연동하기</title>
     <link>https://berom.net/%EA%B2%80%EC%83%89-%EC%97%94%EC%A7%84-Obsidian-plugin-Omnisearch-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0</link>
