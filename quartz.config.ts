@@ -12,7 +12,8 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "google",
+      tagId: "G-P07C416MPF", // Replace with your actual Google Analytics tracking ID
     },
     locale: "en-US",
     baseUrl: "berom.net",
