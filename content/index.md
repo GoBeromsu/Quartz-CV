@@ -22,15 +22,4 @@ up:
 		- [[음향 엔지니어가 Javascript Concurrency Vs Parallelism 이해하는 방법]]
 		- [[음향 엔지니어가 JavaScript의 실행 메커니즘 이해하는 방법]]
 
-
-
-
-- To do list 
-	- google analytics 에 추가
-
-### Reference
-
-- [Minwoo Seong | phd hci @ GIST](https://minwooseong.com/)
-- [Welcome to Quartz 4](https://quartz.jzhao.xyz/)
-- [개발자 유니의 두 번째 뇌](https://shin-jae-yoon.github.io/)
-- [doors - 서울외계인의 지식정원 - Obsidian Publish](https://publish.obsidian.md/seoulalien/doors)
+## 
