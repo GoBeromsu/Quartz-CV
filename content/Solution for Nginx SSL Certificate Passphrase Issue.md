@@ -1,14 +1,18 @@
 ---
-Habitus: 
-up: 
 tags:
   - post/medium
-aliases: []
-CMDS: 
-persona: "[[🔥 Programmer]]"
+  - SoftwareDevelopment
+  - Networking
+  - Security
+persona:
+  - "[[🔥 Programmer]]"
+  - "[[🔥 Analysist]]"
 date_created: 2024-06-05
 link:
   - https://berom0227.medium.com/solution-for-nginx-ssl-certificate-passphrase-issue-e723f2f45ff8
+Habitus:
+  - "[[◦ Knowledge]]"
+  - "[[◦ Economic]]"
 ---
 # Solution for Nginx SSL Certificate Passphrase Issue
 

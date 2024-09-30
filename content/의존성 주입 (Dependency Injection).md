@@ -346,7 +346,7 @@ public class UserService {
 
 - [[테스트 주도 개발 (Test-Driven Development)]]: DI는 테스트 가능한 코드를 작성하는 데 핵심적인 역할을 하며, TDD의 실천을 용이하게 합니다.
 
-- [[SOLID 원칙 (SOLID Principles)]]: [[객체 지향 프로그래밍|OOP]] 및 설계의 다섯 가지 기본 원칙으로, DI는 이 원칙들을 준수하는 데 도움이 됩니다.
+- [[SOLID 원칙 (SOLID Principles)]]: [[객체 지향 프로그래밍(Object-Oriented Programming)|OOP]] 및 설계의 다섯 가지 기본 원칙으로, DI는 이 원칙들을 준수하는 데 도움이 됩니다.
 
-- [[객체 지향 프로그래밍 (Object-Oriented Programming)]]: DI는 OOP의 원칙을 효과적으로 적용하는 데 중요한 역할을 합니다.
+- [[객체 지향 프로그래밍(Object-Oriented Programming)]]: DI는 OOP의 원칙을 효과적으로 적용하는 데 중요한 역할을 합니다.
 

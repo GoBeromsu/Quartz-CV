@@ -6,65 +6,65 @@
       <description>Last 10 notes on Beomsu Koh</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>게인 스트럭처(Gain Structure)</title>
-    <link>https://berom.net/Sound/%EA%B2%8C%EC%9D%B8-%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98(Gain-Structure)</link>
-    <guid>https://berom.net/Sound/%EA%B2%8C%EC%9D%B8-%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98(Gain-Structure)</guid>
-    <description>Gain Structure란 무엇인가? Gain Structure는 오디오 신호의 각 단계에서 신호의 레벨을 최적화하여 왜곡 없이 깨끗한 사운드를 유지하는 데 필수적인 요소입니다. 각 장비와 시스템 내에서 신호의 레벨을 조정하여 신호 대 잡음비(SNR)를 최대화하고 왜곡 없이 신호의 청정도를 유지하는 것을 목표로 합니다.</description>
-    <pubDate>Thu, 26 Sep 2024 20:45:13 GMT</pubDate>
+    <title>글또 작성 마감 일정 (공유용) - Obsidian version</title>
+    <link>https://berom.net/%EA%B8%80%EB%98%90-%EC%9E%91%EC%84%B1-%EB%A7%88%EA%B0%90-%EC%9D%BC%EC%A0%95-(%EA%B3%B5%EC%9C%A0%EC%9A%A9)---Obsidian-version</link>
+    <guid>https://berom.net/%EA%B8%80%EB%98%90-%EC%9E%91%EC%84%B1-%EB%A7%88%EA%B0%90-%EC%9D%BC%EC%A0%95-(%EA%B3%B5%EC%9C%A0%EC%9A%A9)---Obsidian-version</guid>
+    <description>채정님의 작성 마감 일정(공유용)을 Obsidian version으로 변환하였습니다! Dataview 기능 설명 Dataview는 Obsidian에서 메타데이터를 쿼리하고 표시하는 강력한 플러그인입니다. 주요 기능은 다음과 같습니다: 메타데이터 인덱싱: 태그, YAML 프론트매터, 인라인 필드 등을 자동으로 인덱싱합니다.</description>
+    <pubDate>Mon, 30 Sep 2024 21:09:14 GMT</pubDate>
   </item><item>
-    <title>신호 흐름 (Signal Flow)</title>
-    <link>https://berom.net/Sound/%EC%8B%A0%ED%98%B8-%ED%9D%90%EB%A6%84-(Signal-Flow)</link>
-    <guid>https://berom.net/Sound/%EC%8B%A0%ED%98%B8-%ED%9D%90%EB%A6%84-(Signal-Flow)</guid>
-    <description>왜 시그널 플로우를 알아야 할까? 시그널 플로우(Signal Flow)는 음향 시스템에서 오디오 신호가 어떻게 이동하고 처리되는지를 나타내는 핵심 개념입니다. 시니어 사운드 엔지니어로서 시그널 플로우를 정확히 이해하지 못하면 시스템 설정, 문제 해결, 믹싱 등에서 심각한 어려움을 겪을 수 있습니다.</description>
-    <pubDate>Thu, 26 Sep 2024 18:08:40 GMT</pubDate>
+    <title>Solution for Nginx SSL Certificate Passphrase Issue</title>
+    <link>https://berom.net/Solution-for-Nginx-SSL-Certificate-Passphrase-Issue</link>
+    <guid>https://berom.net/Solution-for-Nginx-SSL-Certificate-Passphrase-Issue</guid>
+    <description>Solution for Nginx SSL Certificate Passphrase Issue Ensuring the seamless operation of your Nginx server, especially in automated environments like Docker, is crucial ...</description>
+    <pubDate>Mon, 30 Sep 2024 15:01:55 GMT</pubDate>
   </item><item>
     <title>음향 (Sound)</title>
     <link>https://berom.net/Sound/%EC%9D%8C%ED%96%A5-(Sound)</link>
     <guid>https://berom.net/Sound/%EC%9D%8C%ED%96%A5-(Sound)</guid>
     <description> 신호 흐름 (Signal Flow) 게인 스트럭처(Gain Structure) .</description>
-    <pubDate>Thu, 26 Sep 2024 14:59:22 GMT</pubDate>
-  </item><item>
-    <title>Home</title>
-    <link>https://berom.net/</link>
-    <guid>https://berom.net/</guid>
-    <description>This is the home page of my digital garden.</description>
-    <pubDate>Thu, 26 Sep 2024 14:57:57 GMT</pubDate>
-  </item><item>
-    <title>그라운드 루프(Ground Loop)</title>
-    <link>https://berom.net/Sound/%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EB%A3%A8%ED%94%84(Ground-Loop)</link>
-    <guid>https://berom.net/Sound/%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EB%A3%A8%ED%94%84(Ground-Loop)</guid>
-    <description>그라운드 루프 (Ground Loop) What is Ground Loop 정의 (Definition): 그라운드 루프는 오디오 시스템에서 발생하는 전기적 간섭 현상으로, 두 개 이상의 장치가 서로 다른 접지점을 통해 연결될 때 발생합니다(Ballou, 2015). 이는 시스템 내에서 원치 않는 전류가 흐르게 되어 오디오 신호에 노이즈나 험(hum)을 유발합니다(White &amp; Louie, 2005).</description>
-    <pubDate>Thu, 26 Sep 2024 14:56:46 GMT</pubDate>
-  </item><item>
-    <title>하울링(Feedback)</title>
-    <link>https://berom.net/Sound/%ED%95%98%EC%9A%B8%EB%A7%81(Feedback)</link>
-    <guid>https://berom.net/Sound/%ED%95%98%EC%9A%B8%EB%A7%81(Feedback)</guid>
-    <description>오디오 피드백 (Audio Feedback) What is Audio Feedback 정의 (Definition): 오디오 피드백은 음향 출력(예: 스피커)과 입력(예: 마이크) 사이에 음향 경로가 존재할 때 발생하는 양의 피드백 상황입니다. 이는 스피커에서 나온 소리가 마이크로 다시 입력되어 증폭되는 순환 과정을 만들어 특징적인 ‘하울링’ 소리를 발생시킵니다(Wikipedia, 2024).</description>
-    <pubDate>Thu, 26 Sep 2024 14:53:01 GMT</pubDate>
-  </item><item>
-    <title>하이패스 필터(High-Pass Filter)</title>
-    <link>https://berom.net/Sound/%ED%95%98%EC%9D%B4%ED%8C%A8%EC%8A%A4-%ED%95%84%ED%84%B0(High-Pass-Filter)</link>
-    <guid>https://berom.net/Sound/%ED%95%98%EC%9D%B4%ED%8C%A8%EC%8A%A4-%ED%95%84%ED%84%B0(High-Pass-Filter)</guid>
-    <description>하이패스 필터 (High-Pass Filter) What is High-Pass Filter 정의 (Definition): 하이패스 필터(HPF)는 설정된 차단 주파수(cutoff frequency) 아래의 모든 주파수를 감쇠시키는 이퀄라이제이션 도구입니다. 즉, 고주파는 통과시키고 저주파는 제거합니다(Mathias, n.d.).</description>
-    <pubDate>Thu, 26 Sep 2024 14:47:55 GMT</pubDate>
-  </item><item>
-    <title>검색 엔진 Obsidian plugin Omnisearch 연동하기</title>
-    <link>https://berom.net/%EA%B2%80%EC%83%89-%EC%97%94%EC%A7%84-Obsidian-plugin-Omnisearch-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0</link>
-    <guid>https://berom.net/%EA%B2%80%EC%83%89-%EC%97%94%EC%A7%84-Obsidian-plugin-Omnisearch-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0</guid>
-    <description>검색엔진 Obsidian Plugin Omnisearch 연동하기 Omnisearch는 Obsidian의 강력한 검색 플러그인으로, 다음과 같은 특징을 가지고 있습니다: 다양한 파일 형식 지원: 노트, Office 문서, PDF, 이미지 등을 빠르게 검색 오타 저항성: 검색어의 오타에도 관련 결과를 찾아냄 필터링 기능: 다양한 파일 형식별 ...</description>
-    <pubDate>Thu, 26 Sep 2024 12:43:40 GMT</pubDate>
-  </item><item>
-    <title>2시간마다 한글 키보드를 자동으로 삭제하기</title>
-    <link>https://berom.net/2%EC%8B%9C%EA%B0%84%EB%A7%88%EB%8B%A4-%ED%95%9C%EA%B8%80-%ED%82%A4%EB%B3%B4%EB%93%9C%EB%A5%BC-%EC%9E%90%EB%8F%99%EC%9C%BC%EB%A1%9C-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0</link>
-    <guid>https://berom.net/2%EC%8B%9C%EA%B0%84%EB%A7%88%EB%8B%A4-%ED%95%9C%EA%B8%80-%ED%82%A4%EB%B3%B4%EB%93%9C%EB%A5%BC-%EC%9E%90%EB%8F%99%EC%9C%BC%EB%A1%9C-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0</guid>
-    <description>2시간마다 한글 키보드를 자동으로 삭제하기 저는 영어 실력 향상을 목표로, 의도적으로 한글 사용 빈도를 줄이는 환경을 만들고자 했습니다. 한글을 계속 사용하다 보면 무의식적으로 한글을 더 자주 쓰게 되는데, 이를 방지하기 위해 2시간에 한 번씩 한글 키보드 레이아웃을 자동으로 제거하도록 설정했습니다.</description>
-    <pubDate>Wed, 25 Sep 2024 22:06:37 GMT</pubDate>
+    <pubDate>Mon, 30 Sep 2024 15:01:55 GMT</pubDate>
   </item><item>
     <title>의존성 주입 (Dependency Injection)</title>
     <link>https://berom.net/%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A3%BC%EC%9E%85-(Dependency-Injection)</link>
     <guid>https://berom.net/%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A3%BC%EC%9E%85-(Dependency-Injection)</guid>
     <description>의존성 주입(Dependency Injection, DI) 은 객체 지향 프로그래밍에서 객체가 자신이 필요로 하는 의존성을 직접 생성하지 않고, 외부에서 제공(주입)받는 설계 패턴이자 원칙입니다(Fowler, 2004). 여기서 의존성이란 한 객체가 다른 객체의 기능이나 데이터를 필요로 할 때 그 객체를 의미합니다.</description>
-    <pubDate>Wed, 25 Sep 2024 17:15:11 GMT</pubDate>
+    <pubDate>Fri, 27 Sep 2024 19:26:42 GMT</pubDate>
+  </item><item>
+    <title>신호 대 잡음비(SNR)</title>
+    <link>https://berom.net/Sound/%EC%8B%A0%ED%98%B8-%EB%8C%80-%EC%9E%A1%EC%9D%8C%EB%B9%84(SNR)</link>
+    <guid>https://berom.net/Sound/%EC%8B%A0%ED%98%B8-%EB%8C%80-%EC%9E%A1%EC%9D%8C%EB%B9%84(SNR)</guid>
+    <description>신호 대 잡음비 (Signal-to-Noise Ratio) What is Signal-to-Noise Ratio (SNR) 정의 (Definition): SNR은 원하는 신호의 레벨과 배경 잡음 레벨 사이의 비율을 나타내는 측정값입니다. 일반적으로 데시벨(dB) 단위로 표현됩니다(Sound On Sound, n.d.).</description>
+    <pubDate>Thu, 26 Sep 2024 21:20:51 GMT</pubDate>
+  </item><item>
+    <title>게인 스트럭처(Gain Structure)</title>
+    <link>https://berom.net/Sound/%EA%B2%8C%EC%9D%B8-%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98(Gain-Structure)</link>
+    <guid>https://berom.net/Sound/%EA%B2%8C%EC%9D%B8-%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98(Gain-Structure)</guid>
+    <description>Gain Structure란 무엇인가? Gain Structure는 오디오 신호의 각 단계에서 신호의 레벨을 최적화하여 왜곡 없이 깨끗한 사운드를 유지하는 데 필수적인 요소입니다. 각 장비와 시스템 내에서 신호의 레벨을 조정하여 신호 대 잡음비(SNR)를 최대화하고 왜곡 없이 신호의 청정도를 유지하는 것을 목표로 합니다.</description>
+    <pubDate>Thu, 26 Sep 2024 21:13:03 GMT</pubDate>
+  </item><item>
+    <title>신호 흐름 (Signal Flow)</title>
+    <link>https://berom.net/Sound/%EC%8B%A0%ED%98%B8-%ED%9D%90%EB%A6%84-(Signal-Flow)</link>
+    <guid>https://berom.net/Sound/%EC%8B%A0%ED%98%B8-%ED%9D%90%EB%A6%84-(Signal-Flow)</guid>
+    <description>왜 시그널 플로우를 알아야 할까? 시그널 플로우(Signal Flow)는 음향 시스템에서 오디오 신호가 어떻게 이동하고 처리되는지를 나타내는 핵심 개념입니다. 시니어 사운드 엔지니어로서 시그널 플로우를 정확히 이해하지 못하면 시스템 설정, 문제 해결, 믹싱 등에서 심각한 어려움을 겪을 수 있습니다.</description>
+    <pubDate>Thu, 26 Sep 2024 18:08:41 GMT</pubDate>
+  </item><item>
+    <title>Home</title>
+    <link>https://berom.net/</link>
+    <guid>https://berom.net/</guid>
+    <description>This is the home page of my digital garden.</description>
+    <pubDate>Thu, 26 Sep 2024 14:58:00 GMT</pubDate>
+  </item><item>
+    <title>그라운드 루프(Ground Loop)</title>
+    <link>https://berom.net/Sound/%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EB%A3%A8%ED%94%84(Ground-Loop)</link>
+    <guid>https://berom.net/Sound/%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EB%A3%A8%ED%94%84(Ground-Loop)</guid>
+    <description>그라운드 루프 (Ground Loop) What is Ground Loop 정의 (Definition): 그라운드 루프는 오디오 시스템에서 발생하는 전기적 간섭 현상으로, 두 개 이상의 장치가 서로 다른 접지점을 통해 연결될 때 발생합니다(Ballou, 2015). 이는 시스템 내에서 원치 않는 전류가 흐르게 되어 오디오 신호에 노이즈나 험(hum)을 유발합니다(White &amp; Louie, 2005).</description>
+    <pubDate>Thu, 26 Sep 2024 14:56:49 GMT</pubDate>
+  </item><item>
+    <title>하울링(Feedback)</title>
+    <link>https://berom.net/Sound/%ED%95%98%EC%9A%B8%EB%A7%81(Feedback)</link>
+    <guid>https://berom.net/Sound/%ED%95%98%EC%9A%B8%EB%A7%81(Feedback)</guid>
+    <description>오디오 피드백 (Audio Feedback) What is Audio Feedback 정의 (Definition): 오디오 피드백은 음향 출력(예: 스피커)과 입력(예: 마이크) 사이에 음향 경로가 존재할 때 발생하는 양의 피드백 상황입니다. 이는 스피커에서 나온 소리가 마이크로 다시 입력되어 증폭되는 순환 과정을 만들어 특징적인 ‘하울링’ 소리를 발생시킵니다(Wikipedia, 2024).</description>
+    <pubDate>Thu, 26 Sep 2024 14:53:04 GMT</pubDate>
   </item>
     </channel>
   </rss>
