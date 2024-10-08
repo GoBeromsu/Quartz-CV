@@ -28,8 +28,9 @@ TABLE default(title, "No Title") as "글 제목", default(deadLine, "No date") a
 FROM #글또/글감
 ```
 
-## 실제 예시
+
 이제 글감이 아래와 같이 dataview에 뜨는 것을 볼 수 있습니다, 제목이 길어서 짤렸지만 Tag도 같이 출력 됩니다 :)
+
 ![[글또 작성 마감 일정 (공유용) - Obsidian version-20240930220720257.jpg]]
 ## 커스터마이징 옵션
 
