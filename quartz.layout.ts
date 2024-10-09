@@ -6,6 +6,8 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [Component.PageTitle(), Component.Search(), Component.Darkmode()],
   afterBody: [
+    Component.TagList(),
+
     Component.Comments({
       provider: "giscus",
       options: {
@@ -20,7 +22,6 @@ export const sharedPageComponents: SharedLayout = {
       },
     }),
     Component.Graph(),
-    Component.TagList(),
   ],
   footer: Component.Footer({
     links: {

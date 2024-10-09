@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
     <channel>
-      <title>Beomsu Koh</title>
+      <title>Beomsu</title>
       <link>https://berom.net</link>
-      <description>Last 10 notes on Beomsu Koh</description>
+      <description>Last 10 notes on Beomsu</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
     <title>What is entropy</title>
@@ -24,16 +24,16 @@
     <description>채정님의 작성 마감 일정(공유용)을 Obsidian version으로 변환하였습니다! Dataview 기능 설명 Dataview는 Obsidian에서 메타데이터를 쿼리하고 표시하는 강력한 플러그인입니다. 주요 기능은 다음과 같습니다: 메타데이터 인덱싱: 태그, YAML 프론트매터, 인라인 필드 등을 자동으로 인덱싱합니다.</description>
     <pubDate>Mon, 30 Sep 2024 21:28:22 GMT</pubDate>
   </item><item>
-    <title>음향 (Sound)</title>
-    <link>https://berom.net/Sound/%EC%9D%8C%ED%96%A5-(Sound)</link>
-    <guid>https://berom.net/Sound/%EC%9D%8C%ED%96%A5-(Sound)</guid>
-    <description> 신호 흐름 (Signal Flow) 게인 스트럭처(Gain Structure) .</description>
-    <pubDate>Mon, 30 Sep 2024 15:01:55 GMT</pubDate>
-  </item><item>
     <title>Solution for Nginx SSL Certificate Passphrase Issue</title>
     <link>https://berom.net/Etc/Solution-for-Nginx-SSL-Certificate-Passphrase-Issue</link>
     <guid>https://berom.net/Etc/Solution-for-Nginx-SSL-Certificate-Passphrase-Issue</guid>
     <description>Solution for Nginx SSL Certificate Passphrase Issue Ensuring the seamless operation of your Nginx server, especially in automated environments like Docker, is crucial ...</description>
+    <pubDate>Mon, 30 Sep 2024 15:01:55 GMT</pubDate>
+  </item><item>
+    <title>음향 (Sound)</title>
+    <link>https://berom.net/Sound/%EC%9D%8C%ED%96%A5-(Sound)</link>
+    <guid>https://berom.net/Sound/%EC%9D%8C%ED%96%A5-(Sound)</guid>
+    <description> 신호 흐름 (Signal Flow) 게인 스트럭처(Gain Structure) .</description>
     <pubDate>Mon, 30 Sep 2024 15:01:55 GMT</pubDate>
   </item><item>
     <title>의존성 주입 (Dependency Injection)</title>
