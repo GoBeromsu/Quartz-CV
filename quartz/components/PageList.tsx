@@ -60,8 +60,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
                   </a>
                 </h3>
               </div>
-              {/* Folder page에서 tag 삭제 */}
-              {/* <ul class="tags">
+              <ul class="tags">
                 {tags.map((tag) => (
                   <li>
                     <a
@@ -72,7 +71,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
                     </a>
                   </li>
                 ))}
-              </ul> */}
+              </ul>
             </div>
           </li>
         )
