@@ -1,5 +1,5 @@
 ---
-tags: [AudioEngineering, ElectricalEngineering, SoundQuality, NoiseReduction, SignalProcessing, terminology, GroundLoop, AudioNoise]
+tags: [AudioEngineering, ElectricalEngineering, SoundQuality, NoiseReduction, SignalProcessing, terminology, GroundLoop, AudioNoise, public]
 aliases: [Ground Loop, 그라운드 루프]
 CMDS:
   - "[[📚 013 Terminologies]]"

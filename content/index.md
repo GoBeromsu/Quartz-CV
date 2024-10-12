@@ -1,5 +1,5 @@
 ---
-tags: []
+tags: [public]
 aliases: [📚 043 Digital Garden, Digital Garden]
 image: https://media.licdn.com/dms/image/v2/D5603AQHeumeAOvJKDg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720693606266?e=1732147200&v=beta&t=WsJ929HxxgqSWrvpHmGFNaG8CygOn6t21Edp6tW6DP8
 description: This is the home page of my digital garden.

@@ -1,3 +1,8 @@
+---
+tags: public
+aliases:
+date_created: 2024-10-10
+---
 # Data Normalization
 
 Data normalization is a crucial preprocessing step in [[Machine Learning]] and [[Data Analysis]]. It involves **adjusting the scales of features so that they contribute equally to the model's learning process**. Without normalization, features with larger magnitudes can disproportionately influence the model, leading to biased results.
