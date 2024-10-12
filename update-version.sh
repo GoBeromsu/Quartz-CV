@@ -18,7 +18,8 @@ echo "Total files to process: $total_files"
 
 # Find and copy files with 'public' tag, skipping hidden files and excluded directories
 find "$VAULT_DIR" -type f -name "*.md" ! -path '*/.*' "${EXCLUDE_ARGS[@]}" | while read -r file; do
-    if grep -qE "tags:.*public|tags:\s*\[.*public.*\]|tags:(\s*-\s*\w+\s*)*\s*-\s*public" "$file"; then
+    if grep -qE "tags:.*public|tags:\s*\[.*public.*\]|tags:(\s*-\s*\w+\s*)*\s*-\s*public" "$file" || 
+       awk '/^---$/,/^---$/' "$file" | grep -qE "^\s*tags:(\s*-\s*\w+\s*)*\s*-\s*public"; then
         # Create the directory structure if it doesn't exist
         mkdir -p "$QUARTZ_CONTENT_DIR/$(dirname "${file#$VAULT_DIR}")"
         # Copy the file to the corresponding directory in QUARTZ_CONTENT_DIR
