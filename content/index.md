@@ -11,6 +11,10 @@ CV: true
 up:
   - "[[CV Project]]"
 date_created: 2024-09-24
-description: ">설렘으로 선을 이루자, 그렇게 탁월해지자- Currently a Developer & Postgraduate- 🌟 Striving to make the world a better place- 🚀 Interested in Productivity, LLM, Obsidian"
 ---
 
+> 설렘으로 선을 이루자, 그렇게 탁월해지자
+
+- Currently a Developer & Postgraduate
+- 🌟 Striving to make the world a better place
+- 🚀 Interested in Productivity, LLM, Obsidian
