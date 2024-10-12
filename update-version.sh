@@ -10,6 +10,15 @@ for dir in "${EXCLUDE_DIRS[@]}"; do
     EXCLUDE_ARGS+=(-not -path "*/${dir}/*")
 done
 
+# Function to check if a file has the 'public' tag
+has_public_tag() {
+    local file="$1"
+    # Check various tag formats
+    grep -qE "tags:.*public|tags:\s*\[.*public.*\]|tags:(\s*-\s*\w+\s*)*\s*-\s*public" "$file" ||
+    awk '/^---$/,/^---$/' "$file" | grep -qE "^\s*tags:(\s*-\s*\w+\s*)*\s*-\s*public" ||
+    awk '/^---$/,/^---$/' "$file" | grep -qE "^\s*tags:\s*$" | grep -qE "^\s*-\s*public\s*$"
+}
+
 # Calculate total number of visible .md files, excluding specified directories
 total_files=$(find "$VAULT_DIR" -type f -name "*.md" ! -path '*/.*' "${EXCLUDE_ARGS[@]}" | wc -l)
 processed_files=0
@@ -18,8 +27,7 @@ echo "Total files to process: $total_files"
 
 # Find and copy files with 'public' tag, skipping hidden files and excluded directories
 find "$VAULT_DIR" -type f -name "*.md" ! -path '*/.*' "${EXCLUDE_ARGS[@]}" | while read -r file; do
-    if grep -qE "tags:.*public|tags:\s*\[.*public.*\]|tags:(\s*-\s*\w+\s*)*\s*-\s*public" "$file" || 
-       awk '/^---$/,/^---$/' "$file" | grep -qE "^\s*tags:(\s*-\s*\w+\s*)*\s*-\s*public"; then
+    if has_public_tag "$file"; then
         # Create the directory structure if it doesn't exist
         mkdir -p "$QUARTZ_CONTENT_DIR/$(dirname "${file#$VAULT_DIR}")"
         # Copy the file to the corresponding directory in QUARTZ_CONTENT_DIR
