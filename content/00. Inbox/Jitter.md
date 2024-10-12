@@ -1,11 +1,12 @@
 ---
-Habitus:
-CMDS:
-persona:
-tags: []
+Habitus: 
+CMDS: 
+persona: 
+tags:
+  - public
 link: 
 up: 
-aliases: []
+aliases: 
 title: Jitter
 date_created: 2023-03-07
 date_modified: 2023-11-21
