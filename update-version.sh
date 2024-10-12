@@ -19,20 +19,31 @@ has_public_tag() {
     awk '/^---$/,/^---$/' "$file" | grep -qE "^\s*tags:\s*$" | grep -qE "^\s*-\s*public\s*$"
 }
 
+# Function to rsync a single file
+rsync_file() {
+    local source="$1"
+    local dest="$QUARTZ_CONTENT_DIR/${source#$VAULT_DIR}"
+    local dest_dir=$(dirname "$dest")
+    
+    # Create destination directory if it doesn't exist
+    mkdir -p "$dest_dir"
+    
+    # Use rsync to copy the file
+    rsync -av --checksum "$source" "$dest"
+    
+    echo "Synced: $(basename "$source")"
+}
+
 # Calculate total number of visible .md files, excluding specified directories
 total_files=$(find "$VAULT_DIR" -type f -name "*.md" ! -path '*/.*' "${EXCLUDE_ARGS[@]}" | wc -l)
 processed_files=0
 
 echo "Total files to process: $total_files"
 
-# Find and copy files with 'public' tag, skipping hidden files and excluded directories
+# Find and sync files with 'public' tag, skipping hidden files and excluded directories
 find "$VAULT_DIR" -type f -name "*.md" ! -path '*/.*' "${EXCLUDE_ARGS[@]}" | while read -r file; do
     if has_public_tag "$file"; then
-        # Create the directory structure if it doesn't exist
-        mkdir -p "$QUARTZ_CONTENT_DIR/$(dirname "${file#$VAULT_DIR}")"
-        # Copy the file to the corresponding directory in QUARTZ_CONTENT_DIR
-        cp "$file" "$QUARTZ_CONTENT_DIR/${file#$VAULT_DIR}"
-        echo "Copied: $(basename "$file")"
+        rsync_file "$file"
     fi
     
     processed_files=$((processed_files + 1))
