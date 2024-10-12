@@ -1,6 +1,7 @@
 import { htmlToJsx } from "../../util/jsx"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 import style from "../styles/listPage.scss"
+import { Root, Element } from "hast"
 
 interface Frontmatter {
   cssclasses?: string[]
@@ -9,16 +10,43 @@ interface Frontmatter {
   email?: string
   linkedin?: string
   twitter?: string
-  description?: string
+}
+
+function extractDescription(tree: Root): [Element[], Element[]] {
+  const description: Element[] = []
+  const rest: Element[] = []
+  let foundHeading = false
+
+  for (const node of tree.children) {
+    if (node.type === "element" && node.tagName.startsWith("h")) {
+      foundHeading = true
+    }
+
+    if (foundHeading) {
+      rest.push(node as Element)
+    } else {
+      description.push(node as Element)
+    }
+  }
+
+  return [description, rest]
 }
 
 const Content: QuartzComponent = ({ fileData, tree }: QuartzComponentProps) => {
-  const content = htmlToJsx(fileData.filePath!, tree)
   const frontmatter = fileData.frontmatter as Frontmatter | undefined
   const classes: string[] = frontmatter?.cssclasses ?? []
   const classString = ["popover-hint", ...classes].join(" ")
-  
+
   const isHomePage = fileData.slug === "index"
+  let description, content
+
+  if (isHomePage) {
+    const [descriptionTree, contentTree] = extractDescription(tree as Root)
+    description = htmlToJsx(fileData.filePath!, { type: "root", children: descriptionTree } as Root)
+    content = htmlToJsx(fileData.filePath!, { type: "root", children: contentTree } as Root)
+  } else {
+    content = htmlToJsx(fileData.filePath!, tree)
+  }
 
   return (
     <article class={classString}>
@@ -53,11 +81,7 @@ const Content: QuartzComponent = ({ fileData, tree }: QuartzComponentProps) => {
               )}
             </div>
           </div>
-          <div class="right-column">
-            {frontmatter.description && (
-              <p class="description">{frontmatter.description}</p>
-            )}
-          </div>
+          <div class="right-column">{description}</div>
         </div>
       )}
       {content}
