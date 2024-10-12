@@ -13,10 +13,27 @@ done
 # Function to check if a file has the 'public' tag
 has_public_tag() {
     local file="$1"
-    # Check various tag formats
-    grep -qE "tags:.*public|tags:\s*\[.*public.*\]|tags:(\s*-\s*\w+\s*)*\s*-\s*public" "$file" ||
-    awk '/^---$/,/^---$/' "$file" | grep -qE "^\s*tags:(\s*-\s*\w+\s*)*\s*-\s*public" ||
-    awk '/^---$/,/^---$/' "$file" | grep -qE "^\s*tags:\s*$" | grep -qE "^\s*-\s*public\s*$"
+    # Extract front matter
+    front_matter=$(sed -n '/^---$/,/^---$/p' "$file")
+    
+    # Check for 'public' tag in various formats
+    echo "$front_matter" | grep -qE '^\s*tags:.*public' ||
+    echo "$front_matter" | grep -qE '^\s*tags:\s*\[.*public.*\]' ||
+    echo "$front_matter" | grep -qE '^\s*tags:\s*$' | grep -qE '^\s*-\s*public\s*$' ||
+    echo "$front_matter" | awk '/^\s*tags:/ {
+        if ($0 ~ /\[/) {
+            in_array=1
+        } else if (in_array && $0 ~ /\]/) {
+            in_array=0
+        }
+        if (in_array || $0 ~ /^\s*tags:/) {
+            if ($0 ~ /\bpublic\b/) {
+                found=1
+                exit
+            }
+        }
+    }
+    END {exit !found}'
 }
 
 # Function to rsync a single file
