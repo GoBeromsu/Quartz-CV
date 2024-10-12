@@ -19,7 +19,6 @@ has_public_tag() {
     # Check for 'public' tag in various formats
     echo "$front_matter" | grep -qE '^\s*tags:.*public' ||
     echo "$front_matter" | grep -qE '^\s*tags:\s*\[.*public.*\]' ||
-    echo "$front_matter" | grep -qE '^\s*tags:\s*$' | grep -qE '^\s*-\s*public\s*$' ||
     echo "$front_matter" | awk '/^\s*tags:/ {
         if ($0 ~ /\[/) {
             in_array=1
@@ -31,6 +30,13 @@ has_public_tag() {
                 found=1
                 exit
             }
+        }
+        in_list=1
+    }
+    in_list && /^\s*-/ {
+        if ($0 ~ /\bpublic\b/) {
+            found=1
+            exit
         }
     }
     END {exit !found}'
