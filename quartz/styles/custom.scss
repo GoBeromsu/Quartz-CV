@@ -1,3 +1,40 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+.home-layout {
+  .profile-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .profile-image {
+    flex-shrink: 0;
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .profile-content {
+    flex-grow: 1;
+  }
+
+  .social-links {
+    margin-top: 1rem;
+
+    a {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      color: var(--dark);
+
+      &:hover {
+        color: var(--secondary);
+      }
+    }
+  }
+}
