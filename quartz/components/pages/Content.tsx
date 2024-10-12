@@ -12,44 +12,41 @@ interface Frontmatter {
   twitter?: string
 }
 
-function extractDescription(tree: Root): [Element[], Element[]] {
-  const description: Element[] = []
-  const rest: Element[] = []
-  let foundHeading = false
+function splitContent(tree: Root): [Element[], Element[]] {
+  const firstHeadingIndex = tree.children.findIndex(
+    (node): node is Element => node.type === "element" && node.tagName.startsWith("h"),
+  )
 
-  for (const node of tree.children) {
-    if (node.type === "element" && node.tagName.startsWith("h")) {
-      foundHeading = true
-    }
-
-    if (foundHeading) {
-      rest.push(node as Element)
-    } else {
-      description.push(node as Element)
-    }
+  if (firstHeadingIndex === -1) {
+    return [tree.children as Element[], []]
   }
 
-  return [description, rest]
+  return [
+    tree.children.slice(0, firstHeadingIndex) as Element[],
+    tree.children.slice(firstHeadingIndex) as Element[],
+  ]
 }
 
 const Content: QuartzComponent = ({ fileData, tree }: QuartzComponentProps) => {
   const frontmatter = fileData.frontmatter as Frontmatter | undefined
-  const classes: string[] = frontmatter?.cssclasses ?? []
-  const classString = ["popover-hint", ...classes].join(" ")
+  const classes = ["popover-hint", ...(frontmatter?.cssclasses ?? [])].join(" ")
 
   const isHomePage = fileData.slug === "index"
   let description, content
 
-  if (isHomePage) {
-    const [descriptionTree, contentTree] = extractDescription(tree as Root)
-    description = htmlToJsx(fileData.filePath!, { type: "root", children: descriptionTree } as Root)
-    content = htmlToJsx(fileData.filePath!, { type: "root", children: contentTree } as Root)
+  if (isHomePage && tree) {
+    const [descriptionElements, contentElements] = splitContent(tree as Root)
+    description = htmlToJsx(fileData.filePath!, {
+      type: "root",
+      children: descriptionElements,
+    } as Root)
+    content = htmlToJsx(fileData.filePath!, { type: "root", children: contentElements } as Root)
   } else {
     content = htmlToJsx(fileData.filePath!, tree)
   }
 
   return (
-    <article class={classString}>
+    <article class={classes}>
       {isHomePage && frontmatter && (
         <div class="home-info">
           <div class="left-column">
