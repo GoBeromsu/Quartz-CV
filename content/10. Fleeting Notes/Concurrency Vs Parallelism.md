@@ -1,3 +1,8 @@
+---
+tags: public
+aliases:
+date_created: 2024-09-24
+---
 
 ## 동시성 (Concurrency)
 
