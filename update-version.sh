@@ -13,33 +13,8 @@ done
 # Function to check if a file has the 'public' tag
 has_public_tag() {
     local file="$1"
-    # Extract front matter
-    front_matter=$(sed -n '/^---$/,/^---$/p' "$file")
-    
-    # Check for 'public' tag in various formats
-    echo "$front_matter" | grep -qE '^\s*tags:.*public' ||
-    echo "$front_matter" | grep -qE '^\s*tags:\s*\[.*public.*\]' ||
-    echo "$front_matter" | awk '/^\s*tags:/ {
-        if ($0 ~ /\[/) {
-            in_array=1
-        } else if (in_array && $0 ~ /\]/) {
-            in_array=0
-        }
-        if (in_array || $0 ~ /^\s*tags:/) {
-            if ($0 ~ /\bpublic\b/) {
-                found=1
-                exit
-            }
-        }
-        in_list=1
-    }
-    in_list && /^\s*-/ {
-        if ($0 ~ /\bpublic\b/) {
-            found=1
-            exit
-        }
-    }
-    END {exit !found}'
+    # Extract front matter and check for 'public'
+    sed -n '/^---$/,/^---$/p' "$file" | grep -q 'public'
 }
 
 # Function to rsync a single file
