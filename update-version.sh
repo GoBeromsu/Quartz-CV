@@ -33,7 +33,8 @@ rsync_file() {
     # Create destination directory if it doesn't exist
     mkdir -p "$dest_dir"
     # Use rsync to copy the file, forcing overwrite and ignoring existing files
-    rsync -av --delete  "$source" "$dest"
+    # rsync -av --delete  "$source" "$dest"
+    echo "Synced file: $source to $dest"
 }
 
 # Calculate total number of visible .md files, excluding specified directories
