@@ -72,4 +72,4 @@ echo "Files processed: $processed_files / $total_files"
 npx quartz update
 git add *
 git commit -m "Update blog"
-# git push
+git push
