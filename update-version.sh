@@ -17,7 +17,7 @@ has_public_tag() {
     /^---$/ {in_front_matter = !in_front_matter; next}
     in_front_matter && /^tags:/ {in_tags = 1; next}
     in_tags && /^[a-zA-Z]/ && !/^  -/ {in_tags = 0}
-    in_tags && (/public/ || /public,/ || /"public"/ || /"public",/) {found = 1; exit}
+    in_tags && (/public/ || /public,/ || /"public"/ || /"public",/ || /\[.*public.*\]/) {found = 1; exit}
     END {exit !found}
     ' "$file"
 }
