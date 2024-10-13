@@ -17,7 +17,8 @@ has_public_tag() {
     /^---$/ {in_front_matter = !in_front_matter; next}
     in_front_matter && /^tags:/ {in_tags = 1; next}
     in_tags && /^[a-zA-Z]/ && !/^  -/ {in_tags = 0}
-    in_tags && (/public/ || /public,/ || /"public"/ || /"public",/ || /\[.*public.*\]/) {found = 1; exit}
+    in_tags && (/public/ || /public,/ || /"public"/ || /"public",/ || /\[public\]/ || /- public/) {found = 1; exit}
+    /\[public\]/ {found = 1; exit}
     END {exit !found}
     ' "$file"
 }
@@ -25,23 +26,15 @@ has_public_tag() {
 # Function to rsync a single file
 rsync_file() {
     local source="$1"
-    local relative_path="${source#$VAULT_DIR/}"
-    local dest="$QUARTZ_CONTENT_DIR/$relative_path"
+    local dest="$QUARTZ_CONTENT_DIR/${source#$VAULT_DIR}"
     local dest_dir=$(dirname "$dest")
     
     echo "Syncing file: $source to $dest"
     
     # Create destination directory if it doesn't exist
     mkdir -p "$dest_dir"
-    
     # Use rsync to copy the file, forcing overwrite and ignoring existing files
-    rsync -av --delete "$source" "$dest"
-    
-    if [ $? -eq 0 ]; then
-        echo "Successfully synced: $relative_path"
-    else
-        echo "Failed to sync: $relative_path"
-    fi
+    rsync -av --delete  "$source" "$dest"
 }
 
 # Calculate total number of visible .md files, excluding specified directories
