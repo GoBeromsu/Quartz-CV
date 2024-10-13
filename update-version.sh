@@ -25,16 +25,23 @@ has_public_tag() {
 # Function to rsync a single file
 rsync_file() {
     local source="$1"
-    local dest="$QUARTZ_CONTENT_DIR/${source#$VAULT_DIR}"
+    local relative_path="${source#$VAULT_DIR/}"
+    local dest="$QUARTZ_CONTENT_DIR/$relative_path"
     local dest_dir=$(dirname "$dest")
     
     echo "Syncing file: $source to $dest"
     
     # Create destination directory if it doesn't exist
     mkdir -p "$dest_dir"
+    
     # Use rsync to copy the file, forcing overwrite and ignoring existing files
-    # rsync -av --delete  "$source" "$dest"
-    echo "Synced file: $source to $dest"
+    rsync -av --delete "$source" "$dest"
+    
+    if [ $? -eq 0 ]; then
+        echo "Successfully synced: $relative_path"
+    else
+        echo "Failed to sync: $relative_path"
+    fi
 }
 
 # Calculate total number of visible .md files, excluding specified directories
