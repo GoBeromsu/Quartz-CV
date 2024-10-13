@@ -31,8 +31,8 @@ rsync_file() {
     # Create destination directory if it doesn't exist
     mkdir -p "$dest_dir"
     
-    # Use rsync to copy the file
-    rsync -av --checksum "$source" "$dest"
+    # Use rsync to copy the file, forcing overwrite
+    rsync -av --checksum --delete "$source" "$dest"
     
     echo "Synced: $(basename "$source")"
 }
