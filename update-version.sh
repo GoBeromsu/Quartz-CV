@@ -14,13 +14,21 @@ done
 has_public_tag() {
     local file="$1"
     awk '
-    /^---$/ {in_front_matter = !in_front_matter; next}
-    in_front_matter && /^tags:/ {in_tags = 1; next}
-    in_tags && /^[a-zA-Z]/ && !/^  -/ {in_tags = 0}
-    in_tags && (/public/ || /public,/ || /"public"/ || /"public",/ || /\[public\]/ || /- public/) {found = 1; exit}
-    /tags:.*\[.*public.*\]/ {found = 1; exit}
-    /\[public\]/ {found = 1; exit}
-    END {exit !found}
+    BEGIN { in_front_matter = 0; public_found = 0 }
+    /^---$/ { in_front_matter = !in_front_matter; next }
+    in_front_matter {
+        if (/^tags:/) {
+            if ($0 ~ /\[.*public.*\]/) { public_found = 1 }
+            in_tags = 1
+            next
+        }
+        if (in_tags) {
+            if ($0 ~ /^[a-zA-Z]/ && $0 !~ /^  -/) { in_tags = 0 }
+            else if ($0 ~ /- public/) { public_found = 1 }
+        }
+        if ($0 ~ /#public/) { public_found = 1 }
+    }
+    END { exit !public_found }
     ' "$file"
 }
 
