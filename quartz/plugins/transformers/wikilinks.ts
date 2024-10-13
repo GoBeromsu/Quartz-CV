@@ -1,5 +1,5 @@
 import { QuartzTransformerPlugin } from "../types"
-import { Root, Text, Link } from "mdast"
+import { Root, Text, Link, PhrasingContent } from "mdast"
 import { visit } from "unist-util-visit"
 import path from "path"
 
@@ -12,46 +12,42 @@ export const WikiLinks: QuartzTransformerPlugin = () => {
           const allSlugs = new Set(
             ctx.allSlugs.map((slug) => path.basename(slug, path.extname(slug))),
           )
+          console.log("allSlugs", allSlugs)
 
           visit(tree, "text", (node: Text, index, parent) => {
+            if (!parent || index === undefined) return
+
             const regex = /\[\[(.*?)\]\]/g
-            const matches = node.value.match(regex)
+            const parts = node.value.split(regex)
 
-            if (matches) {
-              const children = []
-              let lastIndex = 0
-
-              matches.forEach((match) => {
-                const startIndex = node.value.indexOf(match, lastIndex)
-                if (startIndex > lastIndex) {
-                  children.push({ type: "text", value: node.value.slice(lastIndex, startIndex) })
-                }
-
-                const content = match.slice(2, -2)
-                const [link, label] = content.split("|")
-                const displayText = label || link
-                const linkWithoutExtension = path.basename(link, path.extname(link))
-
-                if (allSlugs.has(linkWithoutExtension)) {
-                  // 링크가 존재하는 경우
-                  children.push({
-                    type: "link",
-                    url: link,
-                    children: [{ type: "text", value: displayText }],
-                  } as Link)
+            if (parts.length > 1) {
+              const newNodes: PhrasingContent[] = parts.flatMap((part, i): PhrasingContent[] => {
+                if (i % 2 === 0) {
+                  // Regular text
+                  return part ? [{ type: "text", value: part }] : []
                 } else {
-                  // 링크가 존재하지 않는 경우
-                  children.push({ type: "text", value: displayText })
-                }
+                  // Wikilink
+                  const [link, label] = part.split("|")
+                  const displayText = label || link
+                  const linkWithoutExtension = path.basename(link, path.extname(link))
 
-                lastIndex = startIndex + match.length
+                  if (allSlugs.has(linkWithoutExtension)) {
+                    // Existing link
+                    return [
+                      {
+                        type: "link",
+                        url: link,
+                        children: [{ type: "text", value: displayText }],
+                      },
+                    ]
+                  } else {
+                    // Non-existing link
+                    return [{ type: "text", value: displayText }]
+                  }
+                }
               })
 
-              if (lastIndex < node.value.length) {
-                children.push({ type: "text", value: node.value.slice(lastIndex) })
-              }
-
-              parent.children.splice(index, 1, ...children)
+              parent.children.splice(index, 1, ...newNodes)
             }
           })
         },
