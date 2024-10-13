@@ -32,15 +32,8 @@ rsync_file() {
     
     # Create destination directory if it doesn't exist
     mkdir -p "$dest_dir"
-    
     # Use rsync to copy the file, forcing overwrite and ignoring existing files
-    rsync -av --delete --force "$source" "$dest"
-    
-    if [ $? -eq 0 ]; then
-        echo "Successfully synced: $(basename "$source")"
-    else
-        echo "Failed to sync: $(basename "$source")"
-    fi
+    rsync -av --delete  "$source" "$dest"
 }
 
 # Calculate total number of visible .md files, excluding specified directories
@@ -69,4 +62,4 @@ echo "Files processed: $processed_files / $total_files"
 npx quartz update
 git add *
 git commit -m "Update blog"
-git push
+# git push
