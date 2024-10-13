@@ -32,7 +32,7 @@ rsync_file() {
     mkdir -p "$dest_dir"
     
     # Use rsync to copy the file, forcing overwrite
-    rsync -av --checksum --delete "$source" "$dest"
+    rsync -av --checksum --delete --force "$source" "$dest"
     
     echo "Synced: $(basename "$source")"
 }
