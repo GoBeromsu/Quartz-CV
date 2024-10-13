@@ -28,13 +28,19 @@ rsync_file() {
     local dest="$QUARTZ_CONTENT_DIR/${source#$VAULT_DIR}"
     local dest_dir=$(dirname "$dest")
     
+    echo "Syncing file: $source to $dest"
+    
     # Create destination directory if it doesn't exist
     mkdir -p "$dest_dir"
     
-    # Use rsync to copy the file, forcing overwrite
-    rsync -av --checksum --delete --force "$source" "$dest"
+    # Use rsync to copy the file, forcing overwrite and ignoring existing files
+    rsync -av --delete --force "$source" "$dest"
     
-    echo "Synced: $(basename "$source")"
+    if [ $? -eq 0 ]; then
+        echo "Successfully synced: $(basename "$source")"
+    else
+        echo "Failed to sync: $(basename "$source")"
+    fi
 }
 
 # Calculate total number of visible .md files, excluding specified directories
