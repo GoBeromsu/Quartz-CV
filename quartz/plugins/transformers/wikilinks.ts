@@ -12,7 +12,6 @@ export const WikiLinks: QuartzTransformerPlugin = () => {
           const allSlugs = new Set(
             ctx.allSlugs.map((slug) => path.basename(slug, path.extname(slug))),
           )
-          console.log("allSlugs", allSlugs)
 
           visit(tree, "text", (node: Text, index, parent) => {
             if (!parent || index === undefined) return
