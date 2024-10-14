@@ -41,6 +41,7 @@ Calculated metrics:
 2. Recall = $TP / (TP + FN) = 30 / (30 + 5) = 30 / 35 = 6/7$ ≈ 0.8571 or about 85.71%
 
 3. Accuracy = $(TP + TN) / (TP + TN + FP + FN) = (30 + 100) / (30 + 100 + 15 + 5) = 130 / 150 = 13/15$ ≈ 0.8667 or about 86.67%
+
 ## 2. Student Exam Scores Normalization and Standardization
 
 (*) The table below shows the scores achieved by a group of students on an exam. Using this data, perform the following tasks on the Score feature:
@@ -154,9 +155,9 @@ $$P(X = x, Y = y) = \begin{cases}
 1. 주변 확률 계산:
 	 - P(X = 0) = 1/3, P(X = 1) = 1/3, P(X = 2) = 1/3
 	 - P(Y = 0) = 1/3, P(Y = 1) = 2/3
-
-1. 독립성 검증:
+2. 독립성 검증:
 	- 만약 X와 Y가 독립이라면, 모든 x와 y에 대해 $P(X = x, Y = y) = P(X = x) * P(Y = y)$가 성립해야 합니다.
+
 $$
 P(X = 0, Y = 1) = 1/3 ≠ P(X = 0) * P(Y = 1) = 1/3 * 2/3 = 2/9
 $$
@@ -166,6 +167,7 @@ $$ $$
 P(X = 2, Y = 1) = 1/3 ≠ P(X = 2) * P(Y = 1) = 1/3 * 2/3 = 2/9
 $$
 따라서 X와 Y는 독립이 아닙니다.
+
 #### (b). Are X and Y Uncorrelated?
 
 1. 기대값 계산:
