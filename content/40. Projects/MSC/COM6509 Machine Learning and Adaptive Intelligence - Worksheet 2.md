@@ -152,41 +152,42 @@ $$P(X = x, Y = y) = \begin{cases}
 #### (a). Are X and Y Independent?
 
 1. 주변 확률 계산:
-   P(X = 0) = 1/3, P(X = 1) = 1/3, P(X = 2) = 1/3
-   P(Y = 0) = 1/3, P(Y = 1) = 2/3
+	 - P(X = 0) = 1/3, P(X = 1) = 1/3, P(X = 2) = 1/3
+	 - P(Y = 0) = 1/3, P(Y = 1) = 2/3
 
-2. 독립성 검증:
-   만약 X와 Y가 독립이라면, 모든 x와 y에 대해 $P(X = x, Y = y) = P(X = x) * P(Y = y)$가 성립해야 합니다.
+1. 독립성 검증:
+	- 만약 X와 Y가 독립이라면, 모든 x와 y에 대해 $P(X = x, Y = y) = P(X = x) * P(Y = y)$가 성립해야 합니다.
 $$
-   P(X = 0, Y = 1) = 1/3 ≠ P(X = 0) * P(Y = 1) = 1/3 * 2/3 = 2/9
- $$
- $$
-	 P(X = 1, Y = 0) = 1/3 ≠ P(X = 1) * P(Y = 0) = 1/3 * 1/3 = 1/9
+P(X = 0, Y = 1) = 1/3 ≠ P(X = 0) * P(Y = 1) = 1/3 * 2/3 = 2/9
+$$
+$$
+P(X = 1, Y = 0) = 1/3 ≠ P(X = 1) * P(Y = 0) = 1/3 * 1/3 = 1/9
 $$ $$
-   P(X = 2, Y = 1) = 1/3 ≠ P(X = 2) * P(Y = 1) = 1/3 * 2/3 = 2/9
+P(X = 2, Y = 1) = 1/3 ≠ P(X = 2) * P(Y = 1) = 1/3 * 2/3 = 2/9
 $$
 따라서 X와 Y는 독립이 아닙니다.
 #### (b). Are X and Y Uncorrelated?
 
 1. 기대값 계산:
 $$
-   E[X] = 0*(1/3) + 1*(1/3) + 2*(1/3) = 1
+E[X] = 0*(1/3) + 1*(1/3) + 2*(1/3) = 1
 $$
 $$
-	 E[Y] = 0*(1/3) + 1*(2/3) = 2/3
+E[Y] = 0*(1/3) + 1*(2/3) = 2/3
 $$
 1. $E[XY]$ 계산:
-	$$
-	E[XY] = 0*1*(1/3) + 1*0*(1/3) + 2*1*(1/3) = 2/3
-	$$
+$$
+E[XY] = 0*1*(1/3) + 1*0*(1/3) + 2*1*(1/3) = 2/3
+$$
 1. 공분산 계산:
-   $Cov(X,Y) = E[XY] - E[X]E[Y] = 2/3 - 1*(2/3) = 0$
+$Cov(X,Y) = E[XY] - E[X]E[Y] = 2/3 - 1*(2/3) = 0$
 
 X와 Y의 공분산이 0이므로, X와 Y는 상관관계가 없습니다(uncorrelated).
 
 결론:
 (a) X와 Y는 독립이 아닙니다.
 (b) X와 Y는 상관관계가 없습니다(uncorrelated).
+
 ## 6. Uncorrelated and Independent Random Variables
 
 (**) Two RVs X and Y are uncorrelated if $σ_{XY} = 0$. Since $σ_{XY} = E[XY] - E[X]E[Y]$, the two RVs are uncorrelated if $E[XY] = E[X]E[Y]$. Show that if the RVs are independent, then they are also uncorrelated.
