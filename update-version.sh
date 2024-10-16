@@ -32,23 +32,23 @@ has_public_tag() {
     ' "$file"
 }
 
-# Function to rsync a single file
-rsync_file() {
+# Function to copy and process a single file
+process_file() {
     local source="$1"
     local dest="$QUARTZ_CONTENT_DIR/${source#$VAULT_DIR}"
     local dest_dir=$(dirname "$dest")
     
-    echo "Syncing file: $source to $dest"
+    echo "Processing file: $source to $dest"
     
     # Create destination directory if it doesn't exist
     mkdir -p "$dest_dir"
     
-    # Use rsync to copy the file, forcing overwrite and ignoring existing files
+    # Process the file content
     if [[ "$source" == *"/obsidian/Metadata-auto classifer를 만들게 된 이유.md" ]]; then
-        rsync -av --delete "$source" "$dest"
+        cp "$source" "$dest"
     else
-        # Remove "@content" from the beginning of each line
-        sed 's/^@content //' "$source" | rsync -av --delete - "$dest"
+        # Remove "@content" from the beginning of each line and write to destination
+        sed 's/^@content //' "$source" > "$dest"
     fi
 }
 
@@ -58,18 +58,17 @@ processed_files=0
 
 echo "Total files to process: $total_files"
 
-# Find and sync files with 'public' tag, skipping hidden files and excluded directories
+# Find and process files with 'public' tag, skipping hidden files and excluded directories
 find "$VAULT_DIR" -type f -name "*.md" ! -path '*/.*' "${EXCLUDE_ARGS[@]}" | while read -r file; do
     if has_public_tag "$file"; then
-        rsync_file "$file"
+        process_file "$file"
+        processed_files=$((processed_files + 1))
+        progress=$(awk "BEGIN {printf \"%.2f\", $processed_files / $total_files * 100}")
+        
+        echo "Processed: $(basename "$file")"
+        echo "Progress: $processed_files / $total_files ($progress%)"
+        echo "-------------------"
     fi
-    
-    processed_files=$((processed_files + 1))
-    progress=$(awk "BEGIN {printf \"%.2f\", $processed_files / $total_files * 100}")
-    
-    echo "Processed: $(basename "$file")"
-    echo "Progress: $processed_files / $total_files ($progress%)"
-    echo "-------------------"
 done
 
 echo "Processing completed"
