@@ -26,6 +26,22 @@ date_created: 2024-10-16
 	- Interfaces are not limited to just method declarations - some languages allow constants and static methods [(What is the definition of "interface" in object oriented programming, Stack Overflow, n.d.)](https://stackoverflow.com/questions/2866987/what-is-the-definition-of-interface-in-object-oriented-programming)
 
 ### Examples
+### [[Java]] example 
+```java
+public interface Insurable {
+   double getPremium();
+}
+
+public interface InterestBearing {
+   double getInterestRate();
+}
+```
+- All methods in an interface are implicitly public and abstract
+    - They don't have method implementations, so there's just a semicolon
+- Java does not support multiple inheritance of classes, but it supports multiple inheritance of interfaces
+- Interfaces cannot have instance fields
+    - Constants can be defined in interfaces, and they are implicitly public static final
+
 #### Vehicle Interface
 - Defines common methods like start_engine() that all vehicle classes must implement [(OOP - Interfaces, Germain, n.d.)](https://users.cs.utah.edu/~germain/PPS/Topics/interfaces.html)
 - Allows different vehicle types (car, truck, etc.) to be treated uniformly as "Vehicles" [(OOP - Interfaces, Germain, n.d.)](https://users.cs.utah.edu/~germain/PPS/Topics/interfaces.html)
