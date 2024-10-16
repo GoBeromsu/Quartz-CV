@@ -313,7 +313,7 @@ This encoding reduces the average bits used:
 - 2 bees: 2 bits
 This scheme reduces bit usage for the most common case (0 bees) while maintaining the same length for 1 and 2 bees, resulting in overall efficiency gain.
 
-#### Extend : Calculate Bit Reduction
+#### Extend: Calculate Bit Reduction
 To calculate the bit reduction:
 
 1. Original scheme (fixed 2 bits per second):
@@ -341,9 +341,10 @@ The Huffman coding scheme thus reduces the required storage by 37.5% compared to
 - $H \approx 0.9219$ bits per second
 - 100 seconds: $100 * 0.9219 \approx 92.19$ bits
 
-because this problem has time domain, therefore entorpy related with per second
+Because this problem has a time domain, therefore entropy is related to per second.
+
 ### (c). Bits Needed for Encoding Scheme (average)
-we can use [[Expectations]] fomula.
+We can use the [[Expectations]] formula.
 - [[Difference between Expectation and Average]]
 Average bits per second = $(1 * 15/20) + (2 * 4/20) + (2 * 1/20) = 1.25$ bits
 100 seconds: $100 * 1.25 = 125$ bits
@@ -356,16 +357,41 @@ There is a 10% chance that there won't be enough space in the computer lab, if o
 
 (b). Compute the conditional entropy $H[\text{Full}|\text{Lab}]$. Confirm it is no greater than $H[\text{Full}]$.
 
-### Solution
 
-(a). Marginal entropy of Full:
-   $P(\text{Full} = \text{true}) = 0.5 * 0.1 + 0.5 * 0.3 = 0.2$
-   $P(\text{Full} = \text{false}) = 1 - 0.2 = 0.8$
-   $H[\text{Full}] = -0.2\log_2(0.2) - 0.8\log_2(0.8) \approx 0.7219$ bits
+#### (a). Marginal Entropy of Full
+   - $P(\text{Full} = \text{true}) = 0.5 * 0.1 + 0.5 * 0.3 = 0.2$
+   - $P(\text{Full} = \text{false}) = 1 - 0.2 = 0.8$
+   - $H[\text{Full}] = -0.2\log_2(0.2) - 0.8\log_2(0.8) \approx 0.7219$ bits
 
-(b). Conditional entropy $H[\text{Full}|\text{Lab}]$:
-   $H[\text{Full}|\text{Lab}=1] = -0.1\log_2(0.1) - 0.9\log_2(0.9) \approx 0.4690$ bits
-   $H[\text{Full}|\text{Lab}=2] = -0.3\log_2(0.3) - 0.7\log_2(0.7) \approx 0.8813$ bits
-   $H[\text{Full}|\text{Lab}] = 0.5 * 0.4690 + 0.5 * 0.8813 \approx 0.6752$ bits
+#### (b). [[Conditional Entropy]] $H[\text{Full}|\text{Lab}]$
+   - $H[\text{Full}|\text{Lab}=1] = -0.1\log_2(0.1) - 0.9\log_2(0.9) \approx 0.4690$ bits
+   - $H[\text{Full}|\text{Lab}=2] = -0.3\log_2(0.3) - 0.7\log_2(0.7) \approx 0.8813$ bits
+   - $H[\text{Full}|\text{Lab}] = 0.5 * 0.4690 + 0.5 * 0.8813 \approx 0.6752$ bits
 
-Since $H[\text{Full}|\text{Lab}] \approx 0.6752 < H[\text{Full}] \approx 0.7219$, the conditional entropy $H[\text{Full}|\text{Lab}]$ is indeed no greater than $H[\text{Full}]$.
+- Since $H[\text{Full}|\text{Lab}] \approx 0.6752 < H[\text{Full}] \approx 0.7219$, the conditional entropy $H[\text{Full}|\text{Lab}]$ is indeed no greater than $H[\text{Full}]$.
+
+$H[\text{Full}|\text{Lab}]$ measures the uncertainty of the Full variable when Lab information is given. This represents "How certain can we be about Full status when we know the Lab information?" The lower conditional entropy means that knowing the Lab information reduces uncertainty about Full status.
+
+- Without Lab information, Full status is more uncertain.
+- Knowing the Lab, especially if it's Lab 1, we can be more confident that the Full probability is low.
+- If it's Lab 2, we know the Full probability is relatively high.
+
+### Extend: [[Naive Bayes]] Vs [[Conditional Entropy]]
+Naive Bayes and Conditional Entropy seemed similar in terms of supporting decision-making because:
+
+- Knowing Lab information reduces uncertainty about Full status. This is similar to updating posterior probabilities with new evidence (Lab information) in Naive Bayes.
+- Lower conditional entropy means better prediction is possible. This is similar to improving classification accuracy with new information in Naive Bayes.
+- **Uncertainty Reduction**: Both methods reduce uncertainty about the target variable (Full) through additional information (Lab).
+
+The reason I saw them as similar is that both methods use conditional probability and support decision-making. In fact, both concepts use [[Conditional Probability]]. Naive Bayes calculates P(class|features), and conditional entropy calculates H(Y|X).
+
+The difference in purpose is that [[Naive Bayes]] is used to solve classification problems and predict the class of new data. Conditional entropy measures the amount of information one variable provides about another.
+
+Update method:
+- Naive Bayes: Updates beliefs by calculating posterior probabilities whenever new evidence is given.
+- Conditional Entropy: A static measure that measures the uncertainty of one variable given another.
+
+Result interpretation:
+- Naive Bayes: Provides the probability of belonging to a specific class.
+
+- Conditional Entropy: Measures the amount of information in bits.
