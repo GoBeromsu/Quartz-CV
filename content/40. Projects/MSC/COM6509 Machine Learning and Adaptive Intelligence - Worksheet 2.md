@@ -141,12 +141,14 @@ Applying this criterion to the Scores in Exercise 2, which ones of them can be c
 가장 낮은 점수(27)와 가장 높은 점수(89)도 이 범위 내에 있어 이상치로 간주되지 않습니다.
 ## 5. Joint Probability Mass Function Analysis
 
-(**) Suppose the joint probability mass function of two RVs X and Y is given as,
+Suppose the joint probability mass function of two RVs X and Y is given as,
 
-$$P(X = x, Y = y) = \begin{cases}
+$$
+P(X = x, Y = y) = \begin{cases}
     1/3, & \text{if } (x = 0, y = 1), (x = 1, y = 0) \text{ or } (x = 2, y = 1) \\
     0,   & \text{otherwise}
-\end{cases}$$
+\end{cases}
+$$
 
 - [[Probability Independent]]
 - [[Probability Correlation]]
