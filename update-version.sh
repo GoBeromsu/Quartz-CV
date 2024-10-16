@@ -42,8 +42,14 @@ rsync_file() {
     
     # Create destination directory if it doesn't exist
     mkdir -p "$dest_dir"
+    
     # Use rsync to copy the file, forcing overwrite and ignoring existing files
-    rsync -av --delete  "$source" "$dest"
+    if [[ "$source" == *"/obsidian/Metadata-auto classifer를 만들게 된 이유.md" ]]; then
+        rsync -av --delete "$source" "$dest"
+    else
+        # Remove "@content" from the beginning of each line
+        sed 's/^@content //' "$source" | rsync -av --delete - "$dest"
+    fi
 }
 
 # Calculate total number of visible .md files, excluding specified directories
