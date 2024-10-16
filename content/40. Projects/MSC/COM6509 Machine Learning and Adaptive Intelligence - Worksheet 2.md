@@ -226,12 +226,15 @@ An RFID reader and a microcontroller monitor bees entering a bee-hive. Each seco
 Currently 2 bits are used each second to store the number of bees (0, 1, 2 or 3), but the microprocessor runs out of storage.
 
 The PMF of the number of bees is: 
-$$P(\text{Bee} = b) = \begin{cases}
+$$
+P(\text{Bee} = b) = \begin{cases}
     15/20, & \text{if } b=0 \\
     4/20,  & \text{if } b=1 \\
     1/20,  & \text{if } b=2 \\
     0,     & \text{if } b \geq 3
-\end{cases}$$
+\end{cases}
+$$
+
 
 (a). Suggest an encoding scheme that can store this more efficiently. [Hint: Remember that you need a way to ensure that the decoder knows where one 'message' ends and the next begins].
 
