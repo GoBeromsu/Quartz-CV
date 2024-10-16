@@ -8,19 +8,19 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [
     Component.TagList(),
 
-    Component.Comments({
-      provider: "giscus",
-      options: {
-        // from data-repo
-        repo: "Goberomsu/Quartz-CV",
-        // from data-repo-id
-        repoId: "R_kgDOMzvCAQ",
-        // from data-category
-        category: "Announcements",
-        // from data-category-id
-        categoryId: "DIC_kwDOMzvCAc4Civ7w",
-      },
-    }),
+    // Component.Comments({
+    //   provider: "giscus",
+    //   options: {
+    //     // from data-repo
+    //     repo: "Goberomsu/Quartz-CV",
+    //     // from data-repo-id
+    //     repoId: "R_kgDOMzvCAQ",
+    //     // from data-category
+    //     category: "Announcements",
+    //     // from data-category-id
+    //     categoryId: "DIC_kwDOMzvCAc4Civ7w",
+    //   },
+    // }),
     Component.Graph(),
   ],
   footer: Component.Footer({
