@@ -194,11 +194,11 @@ X와 Y의 공분산이 0이므로, X와 Y는 상관관계가 없습니다(uncorr
 
 ## 6. Uncorrelated and Independent Random Variables
 
-(**) Two RVs X and Y are uncorrelated if $σ_{XY} = 0$. Since $σ_{XY} = E[XY] - E[X]E[Y]$, the two RVs are uncorrelated if $E[XY] = E[X]E[Y]$. Show that if the RVs are independent, then they are also uncorrelated.
+Two RVs X and Y are uncorrelated if $σ_{XY} = 0$. Since $σ_{XY} = E[XY] - E[X]E[Y]$, the two RVs are uncorrelated if $E[XY] = E[X]E[Y]$. Show that if the RVs are independent, then they are also uncorrelated.
 
 ## 7. Covariance and Correlation of Linear Transformation
 
-(***) Let Y = aX + b, where Y and X are RVs and a and b are constants.
+Let Y = aX + b, where Y and X are RVs and a and b are constants.
 
 (a). Find the covariance of X and Y.
 
@@ -217,7 +217,7 @@ You need to store a six letter English word. Assume there are 26 possible letter
 
 ## 9. RFID Bee Monitoring System
 
-(***) An RFID reader and a microcontroller monitor bees entering a bee-hive. Each second it records how many bees have entered. For example:
+An RFID reader and a microcontroller monitor bees entering a bee-hive. Each second it records how many bees have entered. For example:
 
 | Time | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
 |------|---|---|---|---|---|---|---|---|---|----|----|----|----|----|----|----|----|----|----|----| 
