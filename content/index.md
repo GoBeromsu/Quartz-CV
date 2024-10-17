@@ -48,7 +48,7 @@ Sound Engineering, Playing Guitar, Writing, Reading book
 	- Kakao Tech Campus
 		- [**Chukting** (Festival + Meeting)](https://github.com/Step3-kakao-tech-campus/Team14_BE)
 		- [Kakao Tech campus Interview](https://youtu.be/WRyvyBvkSF0?feature=shared&t=590)
-	- KENTECH(Korea Institute of Energy Technology) Intern
+	- KENTECH (Korea Institute of Energy Technology) Intern
 	- CCC VLM Boot camp
 
 - 2022
