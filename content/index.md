@@ -35,7 +35,8 @@ Beomsu Koh is a solo developer with a passion for creating programs that solve r
 - **2024 ~ present**
 	- Studying as a Computer Science postgraduate at [the University of Sheffield](https://www.sheffield.ac.uk/)
 ## I ♥
-Sound Engineering, Playing Guitar, Writing
+Sound Engineering, Playing Guitar, Writing, Reading book
+
 ## On the Web
 - 2024
 	- [Metadata-Auto-Classifier](https://github.com/GoBeromsu/Metadata-Auto-Classifier)
@@ -48,6 +49,8 @@ Sound Engineering, Playing Guitar, Writing
 		- [**Chukting** (Festival + Meeting)](https://github.com/Step3-kakao-tech-campus/Team14_BE)
 		- [Kakao Tech campus Interview](https://youtu.be/WRyvyBvkSF0?feature=shared&t=590)
 	- KENTECH(Korea Institute of Energy Technology) Intern
+	- CCC VLM Boot camp
+
 - 2022
 	- [[Net-Challenge]]
 		- [[Ochestrive]] : Realtime music collaboration service
