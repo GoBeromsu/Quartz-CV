@@ -52,5 +52,5 @@ Sound Engineering, Playing Guitar, Writing, Reading book
 	- CCC VLM Boot camp
 
 - 2022
-	- [[Net-Challenge]]
-		- [[Ochestrive]] : Realtime music collaboration service
+	- [[Net-Challenge]] - [[Ochestrive]]
+		- Realtime music collaboration service
