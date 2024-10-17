@@ -11,6 +11,12 @@ CV: true
 up:
   - "[[CV Project]]"
 date_created: 2024-09-24
+Habitus:
+  - "[[◦ Knowledge]]"
+  - "[[◦ Social]]"
+persona:
+  - "[[🔥 Programmer]]"
+  - "[[🔥 Sound]]"
 ---
 
 > 설렘으로 선을 이루자, 그렇게 탁월해지자
@@ -18,8 +24,7 @@ date_created: 2024-09-24
 - Currently a Developer & Postgraduate
 - 🚀 Interested in Productivity, LLM, Obsidian
 ## Work
-Beous is a postgraduate computer science.
-
+Beomsu Koh is a solo developer with a passion for creating programs that solve real-world problems. He focuses on building software that reflects his values, aiming to help others while addressing his own challenges through programming and AI. Beomsu enjoys the entire process—from the initial idea to the final solution—constantly learning and growing along the way. As a Digital craftsman, striving to live a meaningful life by nurturing his projects as if they were his own children.
 ## Bio
 - **1999**
 	- Born in Yeosu, South Korea
@@ -28,7 +33,21 @@ Beous is a postgraduate computer science.
 - **2020.08 ~ 2022.04**
 	- Military service as a Korean Coast Guard
 - **2024 ~ present**
-	- Studying as a Computer Science postgraduate at [the University of Sheffield](https://www.sheffield.ac.uk/).
+	- Studying as a Computer Science postgraduate at [the University of Sheffield](https://www.sheffield.ac.uk/)
 ## I ♥
-- [Metadata-Auto-Classifier](https://github.com/GoBeromsu/Metadata-Auto-Classifier)
-- [Kakao Tech campus Interview](https://youtu.be/WRyvyBvkSF0?feature=shared&t=590)
+Sound Engineering, Playing Guitar, Writing
+## On the Web
+- 2024
+	- [Metadata-Auto-Classifier](https://github.com/GoBeromsu/Metadata-Auto-Classifier)
+	- Advacned Network Lab
+		- Automate authentication deploy
+- 2023
+	- Advacned Network Lab
+		- Wifi 6 Visualization project
+	- Kakao Tech Campus
+		- [**Chukting** (Festival + Meeting)](https://github.com/Step3-kakao-tech-campus/Team14_BE)
+		- [Kakao Tech campus Interview](https://youtu.be/WRyvyBvkSF0?feature=shared&t=590)
+	- KENTECH(Korea Institute of Energy Technology) Intern
+- 2022
+	- [[Net-Challenge]]
+		- [[Ochestrive]] : Realtime music collaboration service

@@ -68,3 +68,6 @@ date_created: 2024-10-16
 - [[Shannon-Fano Coding]] #DataCompression
 	- Another variable-length encoding scheme that predates Huffman coding but is generally less efficient
 
+
+## 궁금증
+- [[2024-10-17]] 23:28 최근에는 특히 adaptive models에서 Huffman Coding보다 arithmetic coding이 더 많이 사용됩니다. 그 이유는 adaptive 모델에서 기호의 확률이 지속적으로 업데이트되기 때문에, arithmetic coding이 더 효율적으로 연속적인 확률 분포를 처리할 수 있기 때문입니다. 반면, static Huffman은 정적 확률 분포에서 여전히 빠르고 효율적인 방식입니다.
