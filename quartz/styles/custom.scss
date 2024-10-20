@@ -104,7 +104,7 @@ div:has(> .overflow) {
   max-height: none !important;
 }
 
-$adjustedSidePanelWidth: $sidePanelWidth +100px;
+$adjustedSidePanelWidth: $sidePanelWidth +40px;
 
 .page #quartz-body {
   @media all and (min-width: map-get($breakpoints, desktop)) {
