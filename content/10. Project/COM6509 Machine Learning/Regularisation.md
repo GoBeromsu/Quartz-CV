@@ -1,6 +1,10 @@
 ---
-aliases: []
-tags: [DigitalCraftsman, SoftwareDevelopment, Productivity, public, publish]
+aliases: 
+tags:
+  - DigitalCraftsman
+  - SoftwareDevelopment
+  - Productivity
+  - public
 Habitus:
   - "[[◦ Knowledge]]"
   - "[[◦ Economic]]"
