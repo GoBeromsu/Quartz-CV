@@ -1,23 +1,13 @@
 ---
-tags:
-  - MachineLearning
-  - Optimization
-  - ModelTraining
-  - LossFunctions
-  - CostFunctions
-  - terminology
-  - ObjectiveFunctions
-  - ModelPerformance
-  - GradientDescent
-  - public
-aliases:
-  - Loss Function
-  - Cost Function
+tags: [MachineLearning, Optimization, ModelTraining, LossFunctions, CostFunctions, terminology, ObjectiveFunctions, ModelPerformance, GradientDescent, public]
+aliases: [Loss Function]
 CMDS:
   - "[[📚 013 Terminologies]]"
 date_created: 2024-10-01
 ---
-## Objective Function (Machine Learning)
+## Objective Function
+- **비용 함수([[Cost function]])** 는 **목적 함수(objective function)** 의 한 종류입니다.
+	- 비용 함수는 모델의 **오차를 최소화**하기 위한 함수이며, 목적 함수로 사용됩니다.
 #### What is Objective Function
 - Definition:
     - An objective function in [[Machine Learning]] is a mathematical function that quantifies the performance of a model, which the learning algorithm aims to optimize (minimize or maximize) during the training process [(Kronosapiens Labs, 2017)](http://kronosapiens.github.io/blog/2017/03/28/objective-functions-in-machine-learning.html).
